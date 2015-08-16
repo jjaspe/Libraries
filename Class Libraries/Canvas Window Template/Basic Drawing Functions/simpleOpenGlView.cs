@@ -22,9 +22,6 @@ namespace Canvas_Window_Template
 
         #endregion
 
-        #region START UP VARIABLES
-        static int clickX, clickY;             //Coordinates of mouse pointer at last click
-        #endregion
 
         #region VIEWS
         double viewDistance = 300.0d;

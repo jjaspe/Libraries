@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using Canvas_Window_Template.Basic_Drawing_Functions;
 using Canvas_Window_Template.Interfaces;
+using Canvas_Window_Template.Drawables.Shapes;
 
 namespace Canvas_Window_Template.Drawables
 {
-    public class LowWall:wallObj,IDrawable
+    public class LowWall:OpenGLWall,IDrawable
     {
         static int lWallIds = 3;
         public const int idType = 3;
@@ -21,10 +22,10 @@ namespace Canvas_Window_Template.Drawables
         {
             assignId();
             //Create tiles
-            myTiles = new tileObj[1,(int)(endX - startX)/tileSize];
+            myTiles = new OpenGLTile[1,(int)(endX - startX)/tileSize];
             for (int i = 0; i < (endX-startX)/tileSize; i++)
             {
-                myTiles[0,i] = new tileObj(new PointObj(startX + i * tileSize, altitude, 0),
+                myTiles[0,i] = new OpenGLTile(new PointObj(startX + i * tileSize, altitude, 0),
                     new PointObj(startX + (i + 1) * tileSize, altitude, tileSize), Common.colorBrown, Common.colorBlack);
             }
             MyOrigin = myTiles[0, 0].MyOrigin;
@@ -45,29 +46,27 @@ namespace Canvas_Window_Template.Drawables
             double startY = MyOrigin.Y, endY = MyOrigin.Y + MyTiles.Length * TileSize,latitude=MyOrigin.X;
             for (int i = 0; i < (endY - startY) / TileSize; i++)
             {
-                myTiles[0, i] = new tileObj(new PointObj(latitude, startY + i * TileSize, 0),
+                myTiles[0, i] = new OpenGLTile(new PointObj(latitude, startY + i * TileSize, 0),
                     new PointObj(latitude, startY + (i + 1) * TileSize, TileSize), Common.colorBrown, Common.colorBlack);
             }
             Orientation = Common.planeOrientation.X;
         }
 
-        public void draw()
+        public new void draw()
         {
-            foreach (tileObj tile in myTiles)
+            foreach (OpenGLTile tile in myTiles)
                 Common.drawTileAndOutline(tile);
         }
-        public int getId()
-        {
-            return myId;
-        }
-        public double[] getPosition()
+
+        public new double[] getPosition()
         {
             if (myTiles != null)
                 return myTiles[0,0].MyOrigin.toArray();
             else
                 return null;
         }
-        public void setPosition(IPoint newPosition)
+
+        public new void setPosition(IPoint newPosition)
         {
             return;
         }

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Canvas_Window_Template.Basic_Drawing_Functions;using Canvas_Window_Template.Interfaces;
+using Canvas_Window_Template.Drawables.Shapes;
 
 
 namespace Canvas_Window_Template.Drawables
 {
     public class GuardRectangle:IDrawable
     {
-        rectangleObj myRectangle;
+        Rectangle myRectangle;
         bool visible = true;
 
         public bool Visible
@@ -18,7 +19,7 @@ namespace Canvas_Window_Template.Drawables
             set { visible = value; }
         }
 
-        public rectangleObj MyRectangle
+        public Rectangle MyRectangle
         {
             get { return myRectangle; }
             set { myRectangle = value; }

@@ -15,7 +15,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
 {
     public partial  class ReadyOpenGlTemplate:BasicOpenGlTemplate,ICanvasWindow
     {
-        selectorObj mySelector;
+        OpenGLSelector mySelector;
         public simpleOpenGlView MyView
         {
             get { return simpleOpenGlView1; }
@@ -33,7 +33,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             :base()
         {
             InitializeComponent();
-            mySelector = new selectorObj(this.MyView);
+            mySelector = new OpenGLSelector(this.MyView);
             MyWorld = new World();
             MyView.InitializeContexts();
             this.MyView.MouseClick += new MouseEventHandler(viewClick);

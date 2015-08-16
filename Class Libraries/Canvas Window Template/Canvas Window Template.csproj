@@ -67,6 +67,14 @@
     </Compile>
     <Compile Include="Basic Drawing Functions\Rotation.cs" />
     <Compile Include="Basic Setup\World.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLCircle.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLCube.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLLine.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLParallepiped.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLRectangle.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLRombus.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLTile.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLWall.cs" />
     <Compile Include="Drawables\TileMap.cs" />
     <Compile Include="CurvedLines.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -75,7 +83,7 @@
     </Compile>
     <Compile Include="Drawables\DirectionLine.cs" />
     <Compile Include="Drawables\GameObjects.cs" />
-    <Compile Include="Drawables\GuardRectangle.cs" />
+    <Compile Include="Drawables\Sneaking\GuardRectangle.cs" />
     <Compile Include="Drawables\HighBlock.cs" />
     <Compile Include="Drawables\HighWall.cs" />
     <Compile Include="Drawables\LowBlock.cs" />

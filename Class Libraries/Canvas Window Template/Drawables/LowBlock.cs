@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Canvas_Window_Template.Basic_Drawing_Functions;using Canvas_Window_Template.Interfaces;
+using Canvas_Window_Template.Drawables.Shapes;
 
 
 namespace Canvas_Window_Template.Drawables
 {
-    public class LowBlock:cubeObj,IDrawable
+    public class LowBlock:OpenGLCube
     {
         static int lowBlockIds = 1;
-        public const int idType = 1;
-        public int myId;
+
         public LowBlock()
         {
             assignId();
@@ -49,17 +49,14 @@ namespace Canvas_Window_Template.Drawables
             lowBlockIds += GameObjects.objectTypes;
         }
 
-        public void draw()
+        public new void draw()
         {
             Common.drawCubeAndOutline(this);
         }
-        public int getId()
-        {
-            return myId;
-        }
-        public double[] getPosition()
+
+        public new double[] getPosition()
         { return new double[] { MyOrigin.X, MyOrigin.Y, MyOrigin.Z }; }
-        public void setPosition(IPoint newPosition)
+        public new void setPosition(IPoint newPosition)
         {
             MyOrigin = newPosition;
             this.createCubeTiles();

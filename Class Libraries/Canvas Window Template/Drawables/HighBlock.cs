@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Canvas_Window_Template.Basic_Drawing_Functions;using Canvas_Window_Template.Interfaces;
+using Canvas_Window_Template.Drawables.Shapes;
 
 
 namespace Canvas_Window_Template.Drawables
@@ -26,7 +27,7 @@ namespace Canvas_Window_Template.Drawables
             get { return height; }
             private set { height = value; }
         }
-        private cubeObj[] myCubes;
+        private OpenGLCube[] myCubes;
         IPoint myOrigin;
 
         public IPoint MyOrigin
@@ -61,9 +62,9 @@ namespace Canvas_Window_Template.Drawables
         {
             IPoint topOr = new PointObj(or.X, or.Y, or.Z + size);
             //Create two cubes, one on top of the other
-            myCubes = new cubeObj[2];
-            myCubes[0] = new cubeObj(or, size, color, outlineColor);
-            myCubes[1] = new cubeObj(topOr, size, color, outlineColor);
+            myCubes = new OpenGLCube[2];
+            myCubes[0] = new OpenGLCube(or, size, color, outlineColor);
+            myCubes[1] = new OpenGLCube(topOr, size, color, outlineColor);
             myCubes[0].createCubeTiles();
             myCubes[1].createCubeTiles();
 
@@ -75,7 +76,7 @@ namespace Canvas_Window_Template.Drawables
         public void draw()
         {
             if(Visible)
-                foreach(cubeObj cube in myCubes)
+                foreach(OpenGLCube cube in myCubes)
                     Common.drawCubeAndOutline(cube);
         }
         public int getId()
@@ -94,7 +95,7 @@ namespace Canvas_Window_Template.Drawables
 
         public bool Intercepts(IPoint src, IPoint dest)
         {
-            foreach (cubeObj cube in myCubes)
+            foreach (OpenGLCube cube in myCubes)
             {
                 if (cube.Intercepts(src, dest))
                     return true;
@@ -103,12 +104,12 @@ namespace Canvas_Window_Template.Drawables
         }
         public void turn45()
         {
-            foreach (cubeObj cube in myCubes)
+            foreach (OpenGLCube cube in myCubes)
                 cube.turn45();
         }
         public void turn45(IPoint axis)
         {
-            foreach (cubeObj cube in myCubes)
+            foreach (OpenGLCube cube in myCubes)
             {
                 cube.RotationAxis = axis;
                 cube.turn45();

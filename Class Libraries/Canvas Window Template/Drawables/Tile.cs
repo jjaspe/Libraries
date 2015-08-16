@@ -4,21 +4,16 @@ using System.Linq;
 using System.Text;
 using Canvas_Window_Template.Basic_Drawing_Functions;
 using Canvas_Window_Template.Interfaces;
+using Canvas_Window_Template.Drawables.Shapes;
 
 namespace Canvas_Window_Template.Drawables
 {
-    public class Tile : tileObj, IDrawable
+    public class Tile : OpenGLTile
     {        
         static int tileIds = 0;
         public const int idType = 0;
         public int myId;
-        bool visible = true;
 
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
         /// <summary>
         /// 1 is regular color, >1 makes it darker
         /// </summary>
@@ -78,21 +73,18 @@ namespace Canvas_Window_Template.Drawables
             Shaded = Math.Max(1, shade - level);
         }
 
-        public void draw()
+        public new void draw()
         {
             if(Visible)
             Common.drawTileAndOutline(this);
             //Common.drawTile(this);
         }
-        public int getId()
-        {
-            return myId;
-        }
-        public double[] getPosition()
+
+        public new double[] getPosition()
         {
             return new double[] { MyOrigin.X, MyOrigin.Y, MyOrigin.Z };
         }
-        public void setPosition(IPoint newPosition)
+        public new void setPosition(IPoint newPosition)
         {
             MyOrigin.X = newPosition.X;
             MyOrigin.Y = newPosition.Y;

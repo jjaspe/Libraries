@@ -9,7 +9,7 @@ using Tao.OpenGl;
 using System.Windows.Forms;
 using Canvas_Window_Template.Interfaces;
 using Canvas_Window_Template.Drawables;
-using System.Drawing;
+using Canvas_Window_Template.Drawables.Shapes;
 
 namespace Canvas_Window_Template.Basic_Drawing_Functions
 {
@@ -58,7 +58,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
 
 
         #region DRAW FUNCTIONS
-        public static float[] colorToArray(Color color)
+        public static float[] colorToArray(System.Drawing.Color color)
         {
             return new float[] { ((float)color.R)/256, ((float)color.G)/256, ((float)color.B)/256 };
         }
@@ -96,7 +96,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             Gl.glEnd();
         }
 
-        public static void drawTile(tileObj tile)
+        public static void drawTile(OpenGLTile tile)
         {
             int tileOrientation=0;// 1 for perp to X axis, 2 for Y, 3 for Z
             if(tile.MyOrigin.X==tile.MyEnd.X)
@@ -191,7 +191,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             Gl.glPopMatrix();
 
         }
-        public static void drawTileOutline(tileObj tile)
+        public static void drawTileOutline(OpenGLTile tile)
         {
             int tileOrientation=0;// 1 for perp to X axis, 2 for Y, 3 for Z
             if(tile.MyOrigin.X==tile.MyEnd.X)
@@ -283,14 +283,14 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             Gl.glEnd();
             Gl.glPopMatrix();
         }
-        public static void drawTileAndOutline(tileObj tile)
+        public static void drawTileAndOutline(OpenGLTile tile)
         {
             drawTile(tile);
             drawTileOutline(tile);
         }
         
 
-        public static void drawRectangle(rectangleObj rect)
+        public static void drawRectangle(Rectangle rect)
         {
             if(rect.Orientation1!=Common.planeOrientation.None)
             {
@@ -305,7 +305,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
                 Gl.glEnd();
             }
         }
-        public static void drawRectangleOutline(rectangleObj rect)
+        public static void drawRectangleOutline(Rectangle rect)
         {
             if(rect.Orientation1!=Common.planeOrientation.None)
             {
@@ -320,13 +320,13 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
                 Gl.glEnd();
             }
         }
-        public static void drawRectangleAndOutline(rectangleObj rect)
+        public static void drawRectangleAndOutline(Rectangle rect)
         {
             drawRectangle(rect);
             drawRectangleOutline(rect);
         }
 
-        public static void drawRombus(rombusObj rombus)
+        public static void drawRombus(OpenGLRombus rombus)
         {
             int rombusOrientation = 0;// 1 for perp to X axis, 2 for Y, 3 for Z
             if (rombus.MyOrigin.X == rombus.MyEnd.X)
@@ -374,7 +374,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             }
             Gl.glEnd();
         }
-        public static void drawRombusOutline(rombusObj rombus)
+        public static void drawRombusOutline(OpenGLRombus rombus)
         {
             int rombusOrientation = 0;// 1 for perp to X axis, 2 for Y, 3 for Z
             if (rombus.MyOrigin.X == rombus.MyEnd.X)
@@ -423,13 +423,13 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             }
             Gl.glEnd();
         }
-        public static void drawRombusAndOutline(rombusObj rombus)
+        public static void drawRombusAndOutline(OpenGLRombus rombus)
         {
             drawRombus(rombus);
             drawRombusOutline(rombus);
         }
 
-        public static void drawCubeOutline(cubeObj cube)
+        public static void drawCubeOutline(OpenGLCube cube)
         {
             //Draw Faces
             Gl.glPushMatrix();
@@ -444,7 +444,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             drawTileOutline(cube.TileTop);  
             Gl.glPopMatrix();
         }
-        public static void drawCube(cubeObj cube)
+        public static void drawCube(OpenGLCube cube)
         {
             //Draw Faces
             Gl.glPushMatrix();
@@ -459,7 +459,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             drawTile(cube.TileTop);
             Gl.glPopMatrix();
         }
-        public static void drawCubeAndOutline(cubeObj cube)
+        public static void drawCubeAndOutline(OpenGLCube cube)
         {
             //Draw Faces
             Gl.glPushMatrix();
@@ -484,7 +484,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             Gl.glPopMatrix();
         }
 
-        public static void drawParallepiped(parallepiped p)
+        public static void drawParallepiped(OpenGLParallepiped p)
         {
             //Draw Faces
             Gl.glPushMatrix();
@@ -501,7 +501,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             Gl.glPopMatrix();
         }
 
-        public static void drawCircleOutline(circleObj circle)
+        public static void drawCircleOutline(OpenGLCircle circle)
         {
             for (int i = 0; i < 180; i++)
             {
@@ -520,7 +520,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
                 
             }
         }
-        public static void drawCircle(circleObj circle)
+        public static void drawCircle(OpenGLCircle circle)
         {
             Gl.glPushMatrix();
             Gl.glTranslated(circle.Center.X, circle.Center.Y, 0);
@@ -556,7 +556,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             Gl.glVertex2d(x_offset, y_offset + tileSize);
             Gl.glEnd();*/
         }
-        public static void staticDrawWall(wallObj myWall)
+        public static void staticDrawWall(OpenGLWall myWall)
         {
             Gl.glMatrixMode(Gl.GL_MODELVIEW);
             for (int i = 0; i < myWall.MyHeight; i++)
@@ -570,7 +570,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
 
         }
 
-        public static Tile[,] createTileArray(int width, int height, tileObj[,] tiles, float[] color, double tileSize)
+        public static Tile[,] createTileArray(int width, int height, OpenGLTile[,] tiles, float[] color, double tileSize)
         {
             Tile[,] tileArray = new Tile[width, height];
             for (int i = 0; i < width; i++)
@@ -578,7 +578,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
                 for (int j = 0; j < height; j++)
                 {
                     tileArray[i, j] = new Tile(tiles[i, j].MyOrigin, tiles[i, j].MyEnd);
-                    tileArray[i, j].setColor(color);
+                    tileArray[i, j].SetColor(color);
                     tileArray[i, j].TileSize = tileSize;
                     ((Tile)tileArray[i, j]).OriginalColor = tileArray[i, j].MyColor;
                 }
@@ -619,7 +619,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
                 Gl.glPopMatrix();
             }
         }*/
-        public void drawWall(wallObj myWall)
+        public void drawWall(OpenGLWall myWall)
         {
             Gl.glMatrixMode(Gl.GL_MODELVIEW);
             for (int i = 0; i < myWall.MyHeight; i++)
@@ -668,19 +668,13 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
     }
 
     #region OBJECTS
-    public abstract class Shape:IDrawable
+    public abstract class OpenGLShape:IDrawable
     {
         protected int id;
-        int tag;
 
-        public int Tag
-        {
-            get { return tag; }
-            set { tag = value; }
-        }
+        public int Tag { get; set; }
 
         protected IPoint origin;
-        protected bool visible;
 
         public abstract void draw();
 
@@ -704,13 +698,10 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             origin = newPosition;
         }
 
-        public bool Visible
-        {
-            set { visible = value; }
-        }
+        public bool Visible { get; set; }
     }
 
-    public class selectorObj
+    public class OpenGLSelector
     {
         //int selectedObjectId=-1;
         
@@ -722,7 +713,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             set { canvas = value; }
         }
 
-        public selectorObj(ICanvas _canvas)
+        public OpenGLSelector(ICanvas _canvas)
         {
             Canvas = _canvas;
         }
@@ -774,7 +765,6 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             }
             else
                 return -1;
-            processHits(hits, buffer);
         }
         void beginSelection(int[] location)
         {
@@ -836,1092 +826,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
         #endregion
         
     }
-    public class wallObj:IDrawable
-    {
-        protected tileObj[,] myTiles;
-        int myHeight, myWidth, tileSize;
-        Common.planeOrientation orientation;
-        public float[] defaultColor, defaultOutlineColor;
-        bool visible=true;
-
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
-
-
-        public int TileSize
-        {
-            get { return tileSize; }
-            set { tileSize = value; }
-        }
-        public tileObj[,] MyTiles
-        {
-            get { return myTiles; }
-            set { myTiles = value; }
-        }
-        public Common.planeOrientation Orientation
-        {
-            get { return orientation; }
-            set { orientation = value; }
-        }
-        public int MyHeight
-        {
-            get { return myHeight; }
-            set { myHeight = value; }
-        }
-        public int MyWidth
-        {
-            get { return myWidth; }
-            set { myWidth = value; }
-        }
-        protected IPoint origin;
-
-        public IPoint MyOrigin
-        {
-            get { return origin; }
-            set { origin = value.copy(); }
-        }
-
-        public wallObj()
-        {
-            myTiles=new tileObj[0,0];
-        }
-        /* Wall starts at "origin", wallHeight and wallWidth is how many tiles it has in each dimension,
-         * tileSize their size, orientation is 1 for wall perpendicular to X axis, 2 for Y axis, 3 for Z axis,
-         * and color and outlineColor the tiles' colors*/
-        public wallObj(IPoint origin, int wallHeight, int wallWidth,
-            int _tileSize, int _orientation, float[] color, float[] outlineColor)
-        {
-            myHeight = wallHeight;
-            myWidth = wallWidth;
-            MyOrigin = origin;
-            tileSize = _tileSize;
-            orientation = (Common.planeOrientation)_orientation;
-            myTiles = new tileObj[wallHeight, wallWidth];
-            defaultColor = color;
-            defaultOutlineColor = outlineColor;
-
-            fillWall();
-        }
-        /* Wall starts at "origin", wallHeight and wallWidth is how many tiles it has in each dimension,
-        * tileSize their size, orientation orientation of perpendicular line,
-        * and color and outlineColor the tiles' colors*/
-        public wallObj(IPoint  origin, int wallHeight, int wallWidth,
-            int _tileSize, Common.planeOrientation _orientation, float[] color, float[] outlineColor)
-        {
-            myHeight = wallHeight;
-            myWidth = wallWidth;
-            MyOrigin = origin;
-            tileSize = _tileSize;
-            this.orientation = _orientation;
-            myTiles = new tileObj[wallHeight, wallWidth];
-            defaultColor = color;
-            defaultOutlineColor = outlineColor;
-
-            fillWall();
-        }
-
-        public virtual void fillWall()
-        {
-           myTiles=createTiles();
-        }
-        public bool Intercepts(IPoint src, IPoint dest)
-        {
-            foreach (tileObj tile in myTiles)
-            {
-                if (tile.Intercepts(src, dest))
-                    return true;
-            }
-            return false;
-        }
-        public tileObj[,] createTiles()
-        {
-            tileObj[,] newTiles = new tileObj[myWidth, myHeight];
-            IPoint currentTileOrigin = origin.copy(), currentTileEnd;
-            #region CREATE_TILES_FOR_WALL
-            switch (orientation)
-            {
-                case Common.planeOrientation.X: //Perpendicular to X axis
-                    {
-                        currentTileEnd = new pointObj(currentTileOrigin.X,
-                            currentTileOrigin.Y + tileSize, currentTileOrigin.Z + tileSize);
-                        for (int i = 0; i < myHeight; i++)
-                        {
-
-                            for (int j = 0; j < myWidth; j++)
-                            {
-                                currentTileOrigin.Z = currentTileOrigin.Z + tileSize;
-                                currentTileEnd.Z = currentTileEnd.Z + tileSize;
-                                newTiles[i, j] = new tileObj(currentTileOrigin, currentTileEnd, defaultColor, defaultOutlineColor);
-                            }
-                            currentTileOrigin.Y = currentTileOrigin.Y + tileSize;
-                            currentTileEnd.Y = currentTileEnd.Y + tileSize;
-
-                            currentTileOrigin.Z = origin.Z;
-                            currentTileEnd.Z = currentTileOrigin.Z + tileSize;
-                        }
-                        break;
-                    }
-                case Common.planeOrientation.Y: //Perpendicular to Y axis
-                    {
-                        currentTileEnd = new pointObj(currentTileOrigin.X + tileSize,
-                            currentTileOrigin.Y, currentTileOrigin.Z + tileSize);
-                        for (int i = 0; i < myHeight; i++)
-                        {
-                            for (int j = 0; j < myWidth; j++)
-                            {
-                                currentTileOrigin.X = currentTileOrigin.X + tileSize;
-                                currentTileEnd.X = currentTileEnd.X + tileSize;
-                                newTiles[i, j] = new tileObj(currentTileOrigin, currentTileEnd, defaultColor, defaultOutlineColor);
-                            }
-                            currentTileOrigin.Z = currentTileOrigin.Z + tileSize;
-                            currentTileEnd.Z = currentTileEnd.Z + tileSize;
-
-                            currentTileOrigin.X = origin.X;
-                            currentTileEnd.X = currentTileOrigin.X + tileSize;
-                        }
-                        break;
-                    }
-                case Common.planeOrientation.Z: //Perpendicular to Z axis
-                    {
-                        currentTileEnd = new pointObj(currentTileOrigin.X + tileSize,
-                            currentTileOrigin.Y + tileSize, currentTileOrigin.Z);
-                        for (int i = 0; i < myWidth; i++)
-                        {
-                            for (int j = 0; j < myHeight; j++)
-                            {
-                                newTiles[i, j] = new tileObj(currentTileOrigin, currentTileEnd, defaultColor, defaultOutlineColor);
-                                currentTileOrigin.X = currentTileOrigin.X + tileSize;
-                                currentTileEnd.X = currentTileEnd.X + tileSize;
-                            }
-                            currentTileOrigin.Y = currentTileOrigin.Y + tileSize;
-                            currentTileEnd.Y = currentTileEnd.Y + tileSize;
-
-                            currentTileOrigin.X = origin.X;
-                            currentTileEnd.X = currentTileOrigin.X + tileSize;
-                        }
-                        break;
-                    }
-            }
-            #endregion
-            return newTiles;
-        }
-
-        public void setTileColor(int indexI, int indexJ, float[] color, float[] outlineColor)
-        {
-            if (myWidth > indexI && myHeight > indexJ)
-            {
-                myTiles[indexI, indexJ].MyColor = color;
-                myTiles[indexI, indexJ].MyOutlineColor = outlineColor;
-            }
-        }
-        void recolorWall(float[] color)
-        {
-            for (int i = 0; i < MyHeight; i++)
-            {
-                for (int j = 0; j < this.MyWidth; j++)
-                {
-                    MyTiles[i, j].setColor(color);
-                }
-            }
-        }
-
-        public void draw()
-        {
-            if(Visible)
-                Common.staticDrawWall(this);
-        }
-
-        public int getId()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double[] getPosition()
-        {
-            return MyOrigin.toArray();
-        }
-
-        public void setPosition(IPoint newPosition)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class tileObj:Shape
-    {
-        public IPoint end;
-        Common.planeOrientation Orientation;
-        private double tileSize;
-        private float[] myColor;
-        private float[] myOutlineColor;
-        public int angle=0;
-        
-
-        public IPoint MyEnd
-        {
-            get { return end; }
-            set { end = value.copy(); }
-        }
-        public IPoint MyOrigin
-        {
-            get { return origin; }
-            set { origin = value.copy(); }
-        }       
-        public double TileSize
-        {
-            get { return tileSize; }
-            set { tileSize = value; }
-        }
-        
-        public float[] MyColor
-        {
-            get { return myColor; }
-            set { myColor = value; }
-        }
-        public float[] MyOutlineColor
-        {
-            get { return myOutlineColor; }
-            set { myOutlineColor = value; }
-        }
-
-        public tileObj(IPoint origin, IPoint end, float[] color, float[] outlineColor)
-        {
-            MyOrigin = origin;
-            MyEnd = end;
-            myColor = color;
-            myOutlineColor = outlineColor;
-            setOrientation();
-            setTileSize();
-        }
-        public tileObj()
-        {
-            myColor = new float[] { 0.0f, 0.0f, 0.0f };
-            myOutlineColor = new float[] { 0.0f, 0.0f, 0.0f };
-        }
-        public void setColor(float[] color)
-        {
-            myColor = color;
-        }
-        public float[] getColor()
-        {
-            return myColor;
-        }
-        public void setOutlineColor(float[] color)
-        {
-            myOutlineColor = color;
-        }
-        public float[] getOutlineColor()
-        {
-            return myOutlineColor;
-        }
-        public void setOrientation()
-        {
-            if(MyOrigin.X==MyEnd.X)
-                Orientation=Common.planeOrientation.X;
-            else if(MyOrigin.Y==MyEnd.Y)
-                Orientation=Common.planeOrientation.Y;
-            else if(MyOrigin.Z==MyEnd.Z)
-                Orientation=Common.planeOrientation.Z;
-            else 
-                Orientation=Common.planeOrientation.None;
-        }
-        public void setTileSize()
-        {
-            switch (Orientation)
-            {
-                case Common.planeOrientation.X:
-                    TileSize = MyEnd.Z - MyOrigin.Z;
-                    break;
-                case Common.planeOrientation.Y:
-                    TileSize = MyEnd.Z - MyOrigin.Z;
-                    break;
-                case Common.planeOrientation.Z:
-                    TileSize = MyEnd.X - MyOrigin.X;
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        public void turn45()
-        {
-            angle++;
-        }
-
-        public bool Intercepts(IPoint src, IPoint dest)
-        {
-            //Assume we dont want tiles perp to Z
-            double zStart = Math.Min(MyOrigin.Z, MyEnd.Z), zEnd = Math.Max(MyOrigin.Z, MyEnd.Z);
-            double lineMinY = Math.Min(src.Y, dest.Y), lineMaxY = Math.Max(src.Y, dest.Y),
-                lineMinX = Math.Min(src.X, dest.X), lineMaxX = Math.Max(src.X, dest.X);
-            if (src.Z <zStart || src.Z>zEnd)
-                return false;
-            //Slope of line 
-            double slope = 0;
-            bool noSlope = false;
-            if (src.X != dest.X)
-                slope = (src.Y - dest.Y) / (src.X - dest.X);
-            else
-                noSlope = true;
-            double spot, start, end;
-            double equationResult;
-            //Get checking point
-            setOrientation();
-            switch (Orientation)
-            {
-                case Common.planeOrientation.X://Vertical, so get Y positions
-                    if (!noSlope)//Vertical lines wont intercept vertical tiles
-                    {
-                        spot = origin.X;
-                        if (lineMaxX < spot || lineMinX > spot)//endpoints too high or too low
-                            return false;
-                        start = Math.Min(MyOrigin.Y, MyEnd.Y);
-                        end = Math.Max(MyOrigin.Y, MyEnd.Y);
-                        equationResult = slope * (spot - src.X) + src.Y;
-                        return (start <= equationResult && equationResult <= end);
-                    }
-                    else
-                        return false;
-                case Common.planeOrientation.Y://Horizontal, so get X positions
-                    spot = origin.Y;
-                    if (lineMaxY < spot || lineMinY > spot)//endpoints too high or too low
-                        return false;
-                    start = Math.Min(MyOrigin.X, MyEnd.X);
-                    end = Math.Max(MyOrigin.X, MyEnd.X);
-                    if (noSlope)
-                        equationResult = src.X;//Same X for all points
-                    else
-                        equationResult = (spot - src.Y) / slope + src.X;
-                    return (start <= equationResult && equationResult <= end);
-                default:
-                    return false;
-            }
-        }
-
-        public tileObj copy()
-        {
-            return new tileObj(origin.copy(), end.copy(), MyColor, MyOutlineColor);
-        }
-
-        public override void draw()
-        {
-            Common.drawTileAndOutline(this);
-        }
-
-    }
-    public class rectangleObj:IDrawable
-    {
-        static int rectableObjIds = 1;
-        public const int idType = 1;
-        public int myId;
-        bool visible=true;
-
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
-
-        public IPoint bottomLeft,topLeft,bottomRight,topRight;
-        Common.planeOrientation Orientation;
-
-        public Common.planeOrientation Orientation1
-        {
-            get { return Orientation; }
-        }
-        private float[] myColor;
-        private float[] myOutlineColor;
-
-        public IPoint TopRight
-        {
-          get { return topRight; }
-          set { topRight = value; }
-        }
-
-        public IPoint BottomRight
-        {
-          get { return bottomRight; }
-          set { bottomRight = value; }
-        }
-
-        public IPoint TopLeft
-        {
-          get { return topLeft; }
-          set { topLeft = value; }
-        }
-
-        public IPoint BottomLeft
-        {
-          get { return bottomLeft; }
-          set { bottomLeft = value; }
-        }       
-
-        public float[] MyColor
-        {
-            get { return myColor; }
-            set { myColor = value; }
-        }        
-
-        public float[] MyOutlineColor
-        {
-            get { return myOutlineColor; }
-            set { myOutlineColor = value; }
-        }
-
-        public void setOrientation()
-        {
-            if(BottomLeft.X==TopRight.X)
-                Orientation=Common.planeOrientation.X;
-            else if(BottomLeft.Y==TopRight.Y)
-                Orientation=Common.planeOrientation.Y;
-            else if(BottomLeft.Z==TopRight.Z)
-                Orientation=Common.planeOrientation.Z;
-            else 
-                Orientation=Common.planeOrientation.None;
-        }
-
-        public rectangleObj(IPoint _bLeft, IPoint _tLeft,IPoint _bRight,IPoint _tRight
-            , float[] color, float[] outlineColor)
-        {
-            BottomLeft=_bLeft;
-            bottomRight=_bRight;
-            TopLeft=_tLeft;
-            TopRight=_tRight;
-            myColor = color;
-            myOutlineColor = outlineColor;
-            setOrientation();
-        }
-        public rectangleObj()
-        {
-            myColor = new float[] { 0.0f, 0.0f, 0.0f };
-            myOutlineColor = new float[] { 0.0f, 0.0f, 0.0f };
-            myId = rectableObjIds;
-            rectableObjIds++;
-        }
-
-        public rectangleObj copy()
-        {
-            return new rectangleObj(BottomLeft.copy(), TopLeft.copy(),bottomRight.copy(),topRight.copy(),
-                MyColor, MyOutlineColor);
-        }
-
-        public void draw()
-        {
-            if(Visible)
-            Common.drawRectangleAndOutline(this);
-        }
-
-        public int getId()
-        {
-            return myId;
-        }
-
-        public double[] getPosition()
-        {
-            return new double[]{bottomLeft.X,bottomLeft.Y,bottomLeft.Z};
-        }
-
-        public void setPosition(IPoint newPosition)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class cubeObj:IDrawable
-    {
-        static int cubeObjIds = 1;
-        public const int idType = 1;
-        public int myId;
-        bool visible = true;
-
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
-
-        int cubeSize;
-        int angle = 0;
-
-        /// <summary>
-        /// As Multiples of 45 Degrees. So 3 means 135 Degrees
-        /// </summary>
-        public int Angle
-        {
-            get { return angle; }
-            set { angle = value; }
-        }
-        IPoint origin;
-        IPoint rotationAxis;
-        internal Stack<Rotation> Rotations;
-
-        public IPoint RotationAxis
-        {
-            get { return rotationAxis; }
-            set { rotationAxis = value; }
-        }
-        float[] myColor;
-        float[] myOutlineColor;
-
-        public float[] OutlineColor
-        {
-            get { return myOutlineColor; }
-            set { myOutlineColor = value; }
-        }
-        tileObj tileFront, tileBack, tileLeft, tileRight, tileTop, tileBottom;
-
-        public IPoint MyOrigin
-        {
-            get { return origin.copy(); }
-            set { origin = value.copy(); }
-        }
-
-        public tileObj TileBottom
-        {
-            get { return tileBottom; }
-            set { tileBottom = value; }
-        }
-        public tileObj TileTop
-        {
-            get { return tileTop; }
-            set { tileTop = value; }
-        }
-        public tileObj TileRight
-        {
-            get { return tileRight; }
-            set { tileRight = value; }
-        }
-        public tileObj TileLeft
-        {
-            get { return tileLeft; }
-            set { tileLeft = value; }
-        }
-        public tileObj TileBack
-        {
-            get { return tileBack; }
-            set { tileBack = value; }
-        }
-        public tileObj TileFront
-        {
-            get { return tileFront; }
-            set { tileFront = value; }
-        }
-
-        public float[] Color
-        {
-            get { return myColor; }
-            set { myColor = value; }
-        }
-        public int CubeSize
-        {
-            get { return cubeSize; }
-            set { cubeSize = value; }
-        }
-        public void turn45()
-        {
-            //TileFront.turn45();
-            //TileBack.turn45();
-            //TileLeft.turn45();
-            //TileRight.turn45();
-            //TileTop.turn45();
-            //TileBottom.turn45();
-            angle++;
-        }
-
-        public cubeObj(){
-            myId = cubeObjIds++;
-            Rotations = new Stack<Rotation>();
-        }
-        public cubeObj(IPoint origin, int cubeSize, float[] color, float[] outlineColor)
-        {
-            myId = cubeObjIds++;
-            this.origin = origin;
-            this.cubeSize = cubeSize;
-            this.myColor = color;
-            this.myOutlineColor = outlineColor;
-            createCubeTiles();
-            rotationAxis = new pointObj(origin.X + cubeSize / 2, origin.Y + cubeSize / 2, 0);
-            Rotations = new Stack<Rotation>();
-        }
-        public void createCubeTiles()
-        {
-            rotationAxis = new pointObj(origin.X + cubeSize / 2, origin.Y + cubeSize / 2, 0);
-            tileFront = new tileObj(origin,
-                new pointObj(origin.X + cubeSize, origin.Y, origin.Z + cubeSize),
-                Color, OutlineColor);
-            tileRight = new tileObj(new pointObj(origin.X + cubeSize, origin.Y, origin.Z),
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
-                Color, OutlineColor);
-            tileLeft = new tileObj(origin,
-                new pointObj(origin.X, origin.Y + cubeSize, origin.Z + cubeSize),
-                Color, OutlineColor);
-            tileBack = new tileObj(new pointObj(origin.X, origin.Y + cubeSize, origin.Z),
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
-                Color, OutlineColor);
-            tileBottom = new tileObj(origin,
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z),
-                Color, OutlineColor);
-            tileTop = new tileObj(new pointObj(origin.X, origin.Y, origin.Z + cubeSize),
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
-                Color, OutlineColor);
-        }
-
-        public bool Intercepts(IPoint src, IPoint dest)
-        {
-            return (tileFront.Intercepts(src, dest) || tileBack.Intercepts(src, dest) ||
-                tileLeft.Intercepts(src, dest) || tileRight.Intercepts(src, dest)
-                ||tileBottom.Intercepts(src,dest)||tileTop.Intercepts(src,dest));
-        }
-
-        public void draw()
-        {
-            if(Visible)
-            Common.drawCubeAndOutline(this);
-        }
-
-        public int getId()
-        {
-            return myId;
-        }
-
-        public double[] getPosition()
-        {
-            return new double[] { origin.X, origin.Y, origin.Z };
-        }
-
-        public void setPosition(IPoint newPosition)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Rotate(lineObj line,double degrees)
-        {
-            Rotations.Push(new Rotation() { Axis = line, Degrees = degrees });
-        }
-    }
-    public class rombusObj:IDrawable
-    {
-        static int rhombusObjIds = 1;
-        public const int idType = 1;
-        public int myId;
-        bool visible = true;
-
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
-
-
-
-        public IPoint origin, end;
-
-        public IPoint MyEnd
-        {
-            get { return end; }
-            set { end = value.copy(); }
-        }
-
-        public IPoint MyOrigin
-        {
-            get { return origin; }
-            set { origin = value.copy(); }
-        }
-        private int rombusSize;
-
-        public int RombusSize
-        {
-            get { return rombusSize; }
-            set { rombusSize = value; }
-        }
-        private float[] myColor;
-
-        public float[] MyColor
-        {
-            get { return myColor; }
-            set { myColor = value; }
-        }
-        private float[] myOutlineColor;
-
-        public float[] MyOutlineColor
-        {
-
-            get { return myOutlineColor; }
-            set { myOutlineColor = value; }
-        }
-
-        public rombusObj(IPoint origin, IPoint end, float[] color, float[] outlineColor)
-        {
-            myId = rhombusObjIds++;
-            MyOrigin = origin;
-            MyEnd = end;
-            myColor = color;
-            myOutlineColor = outlineColor;
-        }
-        public rombusObj()
-        {
-            myId = rhombusObjIds++;
-            myColor = new float[] { 0.0f, 0.0f, 0.0f };
-            myOutlineColor = new float[] { 0.0f, 0.0f, 0.0f };
-        }
-        public rombusObj(tileObj tile)
-        {
-            myId = rhombusObjIds++;
-            MyOrigin = tile.MyOrigin;
-            MyEnd = tile.MyEnd;
-            myColor = tile.MyColor;
-            myOutlineColor = tile.MyOutlineColor;
-        }
-        public void setColor(float[] color)
-        {
-            myColor = color;
-        }
-        public float[] getColor()
-        {
-            return myColor;
-        }
-        public void setOutlineColor(float[] color)
-        {
-            myOutlineColor = color;
-        }
-        public float[] getOutlineColor()
-        {
-            return myOutlineColor;
-        }
-
-        public rombusObj copy()
-        {
-            return new rombusObj(origin.copy(), end.copy(), MyColor, MyOutlineColor);
-        }
-
-        public void draw()
-        {
-            if(Visible)
-            Common.drawRombusAndOutline(this);
-        }
-
-        public int getId()
-        {
-            return myId;
-        }
-
-        public double[] getPosition()
-        {
-            return new double[] { origin.X, origin.Y, origin.Z };
-        }
-
-        public void setPosition(IPoint newPosition)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class circleObj:IDrawable
-    {
-        static int circleObjId = 1;
-        public int myId;
-        public double[,] vertices = new double[360,3];
-        IPoint center;
-        bool visible = true;
-
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
-
-        public IPoint Center
-        {
-            get { return center; }
-            set { center = value; }
-        }
-        double radius;
-        public double Radius
-        {
-            get { return radius; }
-            set { radius = value; }
-        }
-        float[] myColor;
-        public float[] MyColor
-        {
-            get { return myColor; }
-            set { myColor = value; }
-        }
-        float[] outlineColor;
-
-        public float[] OutlineColor
-        {
-            get { return outlineColor; }
-            set { outlineColor = value; }
-        }
-        
-        
-        public circleObj(IPoint center, double radius, float[] color,float[] outlineColor)
-        {
-            Center = center;
-            Radius = radius;
-            MyColor = color;
-            OutlineColor = outlineColor;
-            myId = circleObjId++;
-            for (int i = 0; i < vertices.Length/3; i++)
-            {
-                vertices[i,0] = Radius * Math.Cos(i * Math.PI / 180);
-                vertices[i,1] = Radius * Math.Sin(i * Math.PI / 180);
-                vertices[i,2]= 0;
-            }
-        }
-
-
-        public void draw()
-        {
-            if(Visible)
-            Common.drawCircle(this);
-        }
-
-        public int getId()
-        {
-            return myId;
-        }
-
-        public double[] getPosition()
-        {
-            return new double[] { center.X, center.Y, center.Z };
-        }
-
-        public void setPosition(IPoint newPosition)
-        {
-            throw new NotImplementedException();
-        }
-
-        
-    }
-    public class lineObj : IDrawable
-    {
-        static int lineIds = 0;
-        int myId;
-
-        float[] myColor;
-        public float[] MyColor
-        {
-            get { return myColor; }
-            set { myColor = value; }
-        }
-        IPoint p1, p2;
-        bool visible = true;
-
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
-
-        public IPoint P2
-        {
-            get { return p2; }
-            set { p2 = value; }
-        }
-        public IPoint P1
-        {
-            get { return p1; }
-            set { p1 = value; }
-        }
-
-        /// <summary>
-        /// If no color is entered,defaults to red
-        /// </summary>
-        /// <param name="p1"></param>
-        /// <param name="p2"></param>
-        /// <param name="color"></param>
-        public lineObj(IPoint p1, IPoint p2,float[] color=null)//defaulted to red
-        {
-            MyColor = color ?? Common.colorRed;
-            P1 = p1;
-            P2 = p2;
-
-            myId = lineIds++;
-        }
-
-        public lineObj()
-        {
-            myId = lineIds++;
-        }
-
-        public void draw()
-        {
-            if(Visible)
-            Common.drawLine(P1,P2,MyColor);
-        }
-
-        public int getId()
-        {
-            return myId;
-        }
-
-        public double[] getPosition()
-        {
-            return P2.toArray();
-        }
-
-        public void setPosition(IPoint newPosition)
-        {
-            P2=newPosition;
-        }
-    }
-    public class parallepiped : IDrawable
-    {
-        IPoint origin, rotationAxis;
-        int angle=0;
-        double xWidth, yWidth, zWidth;
-        float[] color, outlineColor;
-        rectangleObj tileFront, tileBack, tileLeft, tileRight, tileTop, tileBottom;
-        bool visible = true;
-
-        public bool Visible
-        {
-            get { return visible; }
-            set { visible = value; }
-        }
-        
-
-        #region Properties
-        public IPoint RotationAxis
-        {
-            get { return rotationAxis; }
-            set { rotationAxis = value; createTiles(); }
-        }
-        public rectangleObj TileBottom
-        {
-            get { return tileBottom; }
-            set { tileBottom = value; }
-        }
-        public rectangleObj TileTop
-        {
-            get { return tileTop; }
-            set { tileTop = value; }
-        }
-        public rectangleObj TileRight
-        {
-            get { return tileRight; }
-            set { tileRight = value; }
-        }
-        public rectangleObj TileLeft
-        {
-            get { return tileLeft; }
-            set { tileLeft = value; }
-        }
-        public rectangleObj TileBack
-        {
-            get { return tileBack; }
-            set { tileBack = value; }
-        }
-        public rectangleObj TileFront
-        {
-            get { return tileFront; }
-            set { tileFront = value; }
-        }
-        public IPoint Origin
-        {
-            get { return origin; }
-        }
-        /// <summary>
-        /// As multiple of 45 degrees.
-        /// </summary>
-        public int Angle
-        {
-            get { return angle; }
-            set { angle = value; }
-        }
-        public float[] OutlineColor
-        {
-            get { return outlineColor; }
-            set { outlineColor = value; }
-        }
-
-        public float[] Color
-        {
-            get { return color; }
-            set { color = value; }
-        }
-
-        public double ZWidth
-        {
-            get { return zWidth; }
-            set { zWidth = value; createTiles(); }
-        }
-
-        public double YWidth
-        {
-            get { return yWidth; }
-            set { yWidth = value; createTiles(); }
-        }
-
-        public double XWidth
-        {
-            get { return xWidth; }
-            set { xWidth = value; createTiles(); }
-        }
-        #endregion
-
-        public parallepiped(IPoint origin, double xWidth, double yWidth, double zWidth,float[] color,
-            float[] outlineColor=null )
-        {
-            this.origin = origin;
-            this.xWidth = xWidth;
-            this.yWidth = yWidth;
-            this.zWidth = zWidth;
-            rotationAxis = new pointObj(origin.X + xWidth / 2, origin.Y + yWidth / 2, 0);
-            this.color = color;
-            this.outlineColor = outlineColor ?? Common.colorBlack;
-            createTiles();
-        }
-
-        private void createTiles()
-        {
-            IPoint b1 = origin, 
-                b2 = new pointObj(b1.X + xWidth, b1.Y, b1.Z), 
-                b3 = new pointObj(b1.X + xWidth, b1.Y + yWidth, b1.Z),
-                b4 = new pointObj(b1.X, b1.Y + yWidth, b1.Z), 
-                t1 = new pointObj(b1.X, b1.Y, b1.Z + zWidth), 
-                t2 = new pointObj(b1.X + xWidth, b1.Y, b1.Z + zWidth), 
-                t3 = new pointObj(b1.X + xWidth, b1.Y + yWidth, b1.Z + zWidth),
-                t4 = new pointObj(b1.X, b1.Y + yWidth, b1.Z+zWidth);
-
-            tileBottom = new rectangleObj(b1,b4,b2,b3,
-                Color, OutlineColor);
-            tileRight = new rectangleObj(b2,t2,b3,t3,
-                Color, OutlineColor);
-            tileLeft = new rectangleObj(b1,t1,b4,t4,
-                Color, OutlineColor);
-            tileTop = new rectangleObj(t1,t4,t2,t3,
-                Color, OutlineColor);
-            tileFront = new rectangleObj(b1,t1,b2,t2,
-                Color, OutlineColor);
-            tileBack = new rectangleObj(b3,t3,b4,t4,
-                Color, OutlineColor);
-        }
-
-
-        public void draw()
-        {
-            if (Visible)
-                Common.drawParallepiped(this);
-        }
-
-        public int getId()
-        {
-            return 0;
-        }
-
-        public double[] getPosition()
-        {
-            return Origin.toArray();
-        }
-
-        public void setPosition(IPoint newPosition)
-        {
-            origin=newPosition;
-            createTiles();
-        }
-    }
+    
+    
     #endregion OBJECTS
 }
