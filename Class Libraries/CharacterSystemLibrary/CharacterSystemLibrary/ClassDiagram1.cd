@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CharacterSystemLibrary.Classes.Action" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Action.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Attribute" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAAABAQAAAgIAAAAAAAAAAAIAEAAABIAAAAA=</HashCode>
+      <FileName>Classes\Attribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Character" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8AAEoCEICAQBARCChggACgQAosAACBIBEAAhKICK0AE=</HashCode>
+      <FileName>Classes\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.CharacterAction" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIEAAAAAAAAAgAAAAAARAAAAIAAAACKAABAAAgAA=</HashCode>
+      <FileName>Classes\CharacterAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.characterList" Collapsed="true">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIACAAABAACAAA=</HashCode>
+      <FileName>Classes\characterList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.charProperty" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAQAAAAAAAIAAAAgBAAAgAA=</HashCode>
+      <FileName>Classes\charProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Coefficient" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAASAAAAEAAAAAAAAAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>Classes\Coefficient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Globals" Collapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEQAAABAAAABCAAAAEAAAAAAAAAAAAAABAQ=</HashCode>
+      <FileName>Classes\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.propertyList" Collapsed="true">
+    <Position X="21" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIACAAABAACAAA=</HashCode>
+      <FileName>Classes\propertyList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Skill">
+    <Position X="9.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gCCAAAAMAAQAQFCAAIQAAAAAAgCiEAIAAACAJAAIUAE=</HashCode>
+      <FileName>Classes\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Stat" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAACACAAQABAAAAAgAAAAAAAIAQAAAIAAAgABAAAAgA=</HashCode>
+      <FileName>Classes\Stats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.TBCComponents" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Classes\TBCComponents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Weapon" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICgACCFRIBEBAACQUAoAEEABAAAEARMACAAhIFQAwAE=</HashCode>
+      <FileName>Classes\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.Weapon_Action" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIEAAAAAAAAAgAAAAAAAAAAAIAAIACAAAAAAAwAA=</HashCode>
+      <FileName>Classes\Weapon_Action.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterSystemLibrary.Classes.WeaponAction" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIEAAAAAAAAAgAAAAAAAAAAAIAAIACAAAAAAAwAA=</HashCode>
+      <FileName>Classes\WeaponAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

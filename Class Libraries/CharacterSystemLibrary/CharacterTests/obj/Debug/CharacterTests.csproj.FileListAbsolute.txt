@@ -1,0 +1,7 @@
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterTests\bin\Debug\CharacterTests.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterTests\bin\Debug\CharacterTests.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterTests\bin\Debug\CharacterSystemLibrary.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterTests\bin\Debug\CharacterSystemLibrary.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterTests\obj\Debug\CharacterTests.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterTests\obj\Debug\CharacterTests.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterTests\obj\Debug\CharacterTests.pdb

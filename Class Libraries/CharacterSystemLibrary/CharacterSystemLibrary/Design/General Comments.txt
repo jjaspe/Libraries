@@ -1,0 +1,47 @@
+﻿MODIFICATIONS TO LIBRARY
+
+1- Add an array of int to check called "itsThreshholds" that
+    represents the different ways to pass a check. ---------------DONE
+
+2- Change doCheck to check which threshhold was passed, and return its
+     index. Threshholds will be checked starting from the highest and going down ---------DONE
+
+*- create checksList, with a doChecks() method that returns an int[] 
+	representing the threshholds from the checks. ---------------DONE
+
+3- In WeaponAction, change checks to an array of checkList.Each checkList 
+	represents the checks needed (and threshholds) for one effectList
+	to take effect. -------------DONE
+
+4- Create effectList. 
+	Has a threshholdId int[] that will be used to determine what combination 
+	of threshholds must arise in order for the effects in this list to take place. ------------DONE
+
+5-In WeaponAction, add a 2-dim array of effectList. Each effectList represents 
+	the effects that will take place if a certain combination of threshholds from checks arises.
+	For example if checks[i].doChecks is called, and tHs is
+	the threshholds array, then you would search through 
+	itsEffects[i][0,1,2....n] to find the effectList with tHs
+	as id.														------------DONE
+
+6-Change Effect´s value to a Factor. In doEffect if numOfDice is <0, 
+	subtract the random value obtained. --------------- DONE
+
+10- Change values to double ????
+
+11- Change add() method in all lists so that it adds to the end of the list
+
+12- Add Max Min members to properties. ------------------DONE
+
+13- Add bonus member to properties, change methods. ------DONE
+
+14- Put a int[] lastThreshhold member in checkList that stores the last threshholds obtained for feedback
+
+////////////////// CONTINUE CHANGES HERE ////////////////////////////////
+
+7-Add a bonus member to all property classes. Add a baseValue member too. The Value member will return base.Value+bonus.
+
+8-Add a bonusFactor member to Effect, that says how to change the bonus
+Member of the property.
+
+9-Add coefficient factors to effect class

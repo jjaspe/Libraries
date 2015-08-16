@@ -1,0 +1,50 @@
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\bin\Release\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\bin\Release\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\bin\Release\ISE.FreeType.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\bin\Release\Tao.Externals.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\bin\Release\Tao.FreeGlut.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\bin\Release\Tao.Platform.Windows.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\bin\Release\Tao.OpenGl.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\obj\Release\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\obj\Release\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\ClimbingWallMaker2\Canvas Window Template\obj\Release\Canvas Window Template.pdb
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Canvas Window Template.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Canvas Window Template.pdb
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\ISE.FreeType.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.Externals.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.FreeGlut.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.Platform.Windows.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.OpenGl.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\ResolveAssemblyReference.cache
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\GenerateResource.read.1.tlog
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\GenerateResource.write.1.tlog
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\Canvas Window Template.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\ISE.FreeType.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.Externals.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.FreeGlut.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.Platform.Windows.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Release\Tao.OpenGl.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Release\Canvas Window Template.pdb
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Release\Canvas Window Template.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Release\Canvas Window Template.pdb
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas Window Template.csprojResolveAssemblyReference.cache
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas_Window_Template.Navigator.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas_Window_Template.CurvedLines.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas_Window_Template.Properties.Resources.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas_Window_Template.Basic_Drawing_Functions.ReadyOpenGlTemplate.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas Window Template.csproj.GenerateResource.Cache
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas Window Template.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Release\Canvas Window Template.pdb

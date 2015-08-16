@@ -1,0 +1,46 @@
+﻿The format used in the xml wall file is:
+
+<Root>
+	<Character>
+		<name>n</name>
+		<Skills>
+			<Skill>
+				<name>n</name>
+				<value>n</value>
+				<
+			</Skill>
+			<Skill>
+				....
+			<Skill>
+		</Skills>
+		<Stats>
+			<Stat>
+				<name>n</name>
+				<value>n</value>
+				...
+			</Stats>
+		</Stats>
+		<Attributes>
+			<Stat>
+				<name>n</name>
+				<value>n</value>
+				...
+			</Attributes>
+		</Attributes>
+		<Targets>
+			<Target>
+				<name>n</name>
+				...
+			</Target>
+		</Target>
+		<Weapons>
+			<Weapon>
+				<name>n</name>
+				...
+			</Weapon>
+		</Weapon>
+		<CurrentWeapon>
+			<name>n</name>
+			<....
+		</CurrentWeapon>
+	</Character>

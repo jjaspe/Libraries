@@ -1,0 +1,26 @@
+﻿TODO
+-Create xml converters
+	- Create save methods
+		- Stat -done
+		- Coefficient - done
+		- charProperty - done
+		- TBComponent - done
+		- Attributes - done
+		- Skill - done (without weapons)
+		- Weapons - in progress
+		- character - done (without weapons)
+		
+	- Load methods
+		- TBComponents- done
+		- charProperty - done
+		- Factor - done
+		- Check - done
+		- Stat - done
+		- Attribute- done
+		- Skill - done
+		- Coefficient - done
+		- Character - done
+
+
+-- Create a method addOrSet for each property that adds a property if not already on the list,
+but only changes its values if it's already on it.

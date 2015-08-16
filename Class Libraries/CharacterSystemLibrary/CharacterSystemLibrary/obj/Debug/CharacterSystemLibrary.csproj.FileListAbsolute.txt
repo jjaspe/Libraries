@@ -1,0 +1,14 @@
+C:\Users\bia\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.pdb
+C:\Users\bia\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bia\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\CharacterSystemLibrary.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\CharacterSystemLibrary.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\CharacterSystemLibrary.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\CharacterSystemLibrary.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\CharacterSystemLibrary.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\CharacterSystemLibrary.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterSystemLibrary\obj\Debug\CharacterSystemLibrary.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\bin\Debug\CanvasWindowTemplateTester.exe
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\bin\Debug\CanvasWindowTemplateTester.pdb
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\bin\Debug\Canvas Window Template.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\bin\Debug\ISE.FreeType.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\bin\Debug\Tao.OpenGl.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\bin\Debug\Canvas Window Template.pdb
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\obj\x86\Debug\CanvasWindowTemplateTester.csprojResolveAssemblyReference.cache
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\obj\x86\Debug\CanvasWindowTemplateTester.Form1.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\obj\x86\Debug\CanvasWindowTemplateTester.Properties.Resources.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\obj\x86\Debug\CanvasWindowTemplateTester.csproj.GenerateResource.Cache
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\obj\x86\Debug\CanvasWindowTemplateTester.exe
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\CanvasWindowTemplateTester\obj\x86\Debug\CanvasWindowTemplateTester.pdb

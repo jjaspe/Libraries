@@ -1,0 +1,185 @@
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\ISE.FreeType.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Tao.Externals.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+Y:\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+Y:\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+Y:\Drawing\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+Y:\Drawing\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+Y:\Drawing\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+Y:\Drawing\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+Y:\Drawing\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+Y:\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+Y:\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+E:\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+E:\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+E:\Drawing\Canvas Window Template\bin\Debug\Tao.Externals.dll
+E:\Drawing\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+E:\Drawing\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+E:\Drawing\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+E:\Drawing\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+E:\Drawing\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+E:\Drawing\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+E:\Drawing\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+E:\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+E:\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+Y:\Drawing\Canvas Window Template\bin\Debug\Tao.Externals.dll
+Y:\Drawing\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+Y:\Drawing\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\ISE.FreeType.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\Drawing\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\bin\Debug\ISE.FreeType.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\working projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+Y:\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+Y:\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+Y:\OpenGl projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+Y:\OpenGl projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+Y:\OpenGl projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+Y:\OpenGl projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+Y:\OpenGl projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+Y:\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+Y:\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+Y:\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+Y:\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+E:\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+E:\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+E:\OpenGl projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+E:\OpenGl projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+E:\OpenGl projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+E:\OpenGl projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+E:\OpenGl projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+E:\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+E:\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+E:\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+E:\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+E:\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.dll
+E:\OpenGl projects\Canvas Window Template\bin\Debug\CharacterSystemLibrary.dll
+E:\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.pdb
+E:\OpenGl projects\Canvas Window Template\bin\Debug\CharacterSystemLibrary.pdb
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\CharacterSystemLibrary.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.pdb
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\bia\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.dll
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\CharacterSystemLibrary.dll
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.pdb
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\CharacterSystemLibrary.pdb
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Documents and Settings\Juan\My Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.dll
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\CharacterSystemLibrary.dll
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\SneakingClasses.pdb
+C:\Users\admin1.AP3VIGO\Documents\Visual Studio 2010\Projects\OpenGl projects\Canvas Window Template\bin\Debug\CharacterSystemLibrary.pdb
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\Juan\Programming\OpenGl projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\Canvas_Window_Template.Basic_Drawing_Functions.ReadyOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\Canvas_Window_Template.Navigator.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\Canvas_Window_Template.CurvedLines.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Canvas Window Template\obj\Debug\Canvas_Window_Template.Properties.Resources.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Navigator.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.CurvedLines.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Properties.Resources.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Basic_Drawing_Functions.ReadyOpenGlTemplate.resources
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.csproj.GenerateResource.Cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Canvas Window Template.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Canvas Window Template.pdb
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Tao.FreeGlut.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Tao.OpenGl.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Navigator.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.CurvedLines.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Properties.Resources.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Basic_Drawing_Functions.ReadyOpenGlTemplate.resources
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.csproj.GenerateResource.Cache
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.dll
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\Wichito\Documents\Visual Studio 2010\Projects\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.csprojResolveAssemblyReference.cache

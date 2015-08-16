@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0e5cc4ba-fbe2-4f46-b2f2-03f99f7e57ca" name="Juan@CARMEN-PC 2014-11-22 18:44:19" runUser="Carmen-PC\Juan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ad043c75-57be-47bc-afb9-2572485097f3">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Juan_CARMEN-PC 2014-11-22 18_44_19">
+      <DeploymentItem filename="C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-22T18:44:19.8777162-05:00" queuing="2014-11-22T18:44:19.8927170-05:00" start="2014-11-22T18:44:19.9387197-05:00" finish="2014-11-22T18:44:21.3578008-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="toXmlTest" storage="c:\users\juan\documents\visual studio 2010\projects\class libraries\charactersystemlibrary\charactertests\bin\debug\charactertests.dll" id="1bbddb63-9bad-2974-b670-0ab461dd54fe">
+      <Execution id="3ddd194c-d58f-4f9f-92bd-b33f6bacf77e" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/Class Libraries/CharacterSystemLibrary/CharacterTests/bin/Debug/CharacterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CharacterTests.CharacterTest, CharacterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="toXmlTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1bbddb63-9bad-2974-b670-0ab461dd54fe" executionId="3ddd194c-d58f-4f9f-92bd-b33f6bacf77e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3ddd194c-d58f-4f9f-92bd-b33f6bacf77e" testId="1bbddb63-9bad-2974-b670-0ab461dd54fe" testName="toXmlTest" computerName="CARMEN-PC" duration="00:00:00.9033610" startTime="2014-11-22T18:44:19.9847223-05:00" endTime="2014-11-22T18:44:21.3187986-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ddd194c-d58f-4f9f-92bd-b33f6bacf77e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

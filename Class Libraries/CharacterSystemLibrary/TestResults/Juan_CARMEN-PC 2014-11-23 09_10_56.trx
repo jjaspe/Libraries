@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="22c782bb-0d6b-4eea-8d23-8de5d9583730" name="Juan@CARMEN-PC 2014-11-23 09:10:56" runUser="Carmen-PC\Juan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ad043c75-57be-47bc-afb9-2572485097f3">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Juan_CARMEN-PC 2014-11-23 09_10_56">
+      <DeploymentItem filename="C:\Users\Juan\Documents\Visual Studio 2010\Projects\Class Libraries\CharacterSystemLibrary\CharacterSystemLibrary\bin\Debug\CharacterSystemLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-23T09:10:56.8641189-05:00" queuing="2014-11-23T09:10:56.8841200-05:00" start="2014-11-23T09:10:56.9051212-05:00" finish="2014-11-23T09:11:00.1903091-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="xmlStatsTest" storage="c:\users\juan\documents\visual studio 2010\projects\class libraries\charactersystemlibrary\charactertests\bin\debug\charactertests.dll" id="0bb6ce08-e43d-fd06-f967-16e17f689ca3">
+      <Execution id="ba5ff98b-bac5-483a-b7b9-4a628b651ff6" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/Class Libraries/CharacterSystemLibrary/CharacterTests/bin/Debug/CharacterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CharacterTests.CharacterTest, CharacterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="xmlStatsTest" />
+    </UnitTest>
+    <UnitTest name="xmlAttributesTest" storage="c:\users\juan\documents\visual studio 2010\projects\class libraries\charactersystemlibrary\charactertests\bin\debug\charactertests.dll" id="37bd7bb6-764d-6ace-bcdc-dd9f1762c167">
+      <Execution id="4ebb9a24-60e5-4436-b38e-b466c8ce2caa" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/Class Libraries/CharacterSystemLibrary/CharacterTests/bin/Debug/CharacterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CharacterTests.CharacterTest, CharacterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="xmlAttributesTest" />
+    </UnitTest>
+    <UnitTest name="xmlCharacterTest" storage="c:\users\juan\documents\visual studio 2010\projects\class libraries\charactersystemlibrary\charactertests\bin\debug\charactertests.dll" id="020c8c4f-baf6-4da9-f07b-931428fd1f79">
+      <Execution id="ca4ef4a2-7f72-4417-a176-479af0f50024" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/Class Libraries/CharacterSystemLibrary/CharacterTests/bin/Debug/CharacterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CharacterTests.CharacterTest, CharacterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="xmlCharacterTest" />
+    </UnitTest>
+    <UnitTest name="fromXmlTest" storage="c:\users\juan\documents\visual studio 2010\projects\class libraries\charactersystemlibrary\charactertests\bin\debug\charactertests.dll" id="7f819891-96e5-6458-32a7-c14d28042a6b">
+      <Execution id="594cd75f-2734-4ea2-8287-74b760d07bfa" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/Class Libraries/CharacterSystemLibrary/CharacterTests/bin/Debug/CharacterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CharacterTests.SkillTest, CharacterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="fromXmlTest" />
+    </UnitTest>
+    <UnitTest name="xmlSkillsTest" storage="c:\users\juan\documents\visual studio 2010\projects\class libraries\charactersystemlibrary\charactertests\bin\debug\charactertests.dll" id="e2159dbf-3eaa-5515-0e49-5d029b8c9a14">
+      <Execution id="c7bda64c-2e9d-4fa4-9f07-e0a93093e475" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/Class Libraries/CharacterSystemLibrary/CharacterTests/bin/Debug/CharacterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CharacterTests.CharacterTest, CharacterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="xmlSkillsTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="020c8c4f-baf6-4da9-f07b-931428fd1f79" executionId="ca4ef4a2-7f72-4417-a176-479af0f50024" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0bb6ce08-e43d-fd06-f967-16e17f689ca3" executionId="ba5ff98b-bac5-483a-b7b9-4a628b651ff6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37bd7bb6-764d-6ace-bcdc-dd9f1762c167" executionId="4ebb9a24-60e5-4436-b38e-b466c8ce2caa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f819891-96e5-6458-32a7-c14d28042a6b" executionId="594cd75f-2734-4ea2-8287-74b760d07bfa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2159dbf-3eaa-5515-0e49-5d029b8c9a14" executionId="c7bda64c-2e9d-4fa4-9f07-e0a93093e475" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ca4ef4a2-7f72-4417-a176-479af0f50024" testId="020c8c4f-baf6-4da9-f07b-931428fd1f79" testName="xmlCharacterTest" computerName="CARMEN-PC" duration="00:00:00.8943180" startTime="2014-11-23T09:10:56.9421233-05:00" endTime="2014-11-23T09:10:58.2471980-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca4ef4a2-7f72-4417-a176-479af0f50024">
+    </UnitTestResult>
+    <UnitTestResult executionId="ba5ff98b-bac5-483a-b7b9-4a628b651ff6" testId="0bb6ce08-e43d-fd06-f967-16e17f689ca3" testName="xmlStatsTest" computerName="CARMEN-PC" duration="00:00:00.3235323" startTime="2014-11-23T09:10:58.2501982-05:00" endTime="2014-11-23T09:10:58.5862174-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba5ff98b-bac5-483a-b7b9-4a628b651ff6">
+    </UnitTestResult>
+    <UnitTestResult executionId="4ebb9a24-60e5-4436-b38e-b466c8ce2caa" testId="37bd7bb6-764d-6ace-bcdc-dd9f1762c167" testName="xmlAttributesTest" computerName="CARMEN-PC" duration="00:00:00.3370107" startTime="2014-11-23T09:10:58.5882175-05:00" endTime="2014-11-23T09:10:58.9372375-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ebb9a24-60e5-4436-b38e-b466c8ce2caa">
+    </UnitTestResult>
+    <UnitTestResult executionId="594cd75f-2734-4ea2-8287-74b760d07bfa" testId="7f819891-96e5-6458-32a7-c14d28042a6b" testName="fromXmlTest" computerName="CARMEN-PC" duration="00:00:00.3487283" startTime="2014-11-23T09:10:58.9392376-05:00" endTime="2014-11-23T09:10:59.3082587-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="594cd75f-2734-4ea2-8287-74b760d07bfa">
+    </UnitTestResult>
+    <UnitTestResult executionId="c7bda64c-2e9d-4fa4-9f07-e0a93093e475" testId="e2159dbf-3eaa-5515-0e49-5d029b8c9a14" testName="xmlSkillsTest" computerName="CARMEN-PC" duration="00:00:00.8237412" startTime="2014-11-23T09:10:59.3122589-05:00" endTime="2014-11-23T09:11:00.1453066-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7bda64c-2e9d-4fa4-9f07-e0a93093e475">
+    </UnitTestResult>
+  </Results>
+</TestRun>

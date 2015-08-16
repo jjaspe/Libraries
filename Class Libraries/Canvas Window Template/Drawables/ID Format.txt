@@ -1,0 +1,7 @@
+﻿Ids:
+0 mod 6: tiles
+1 mod 6: low blocks
+2 mod 6: high blocks
+3 mod 6: low wall
+4 mod 6: high wall
+5 mod 6: guard

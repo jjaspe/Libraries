@@ -1,0 +1,6 @@
+﻿WE WANT TO GET TO AT LEAST THIS
+- Create 2 characters, with skills and stats -- APPEARS TO BE WORKING
+- Create 2 weapons
+- Create several weapon actions
+- add actions to weapons
+- add weapons to characters

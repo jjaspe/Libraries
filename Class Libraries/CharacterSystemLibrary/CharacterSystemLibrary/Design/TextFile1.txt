@@ -1,0 +1,3 @@
+﻿- THINGS TO WATCH FOR
+	- When changing elements in member lists, make sure it's not changing only copies (e.g. look at
+		changeCoefficient in Skill class

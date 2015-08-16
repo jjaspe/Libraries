@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F50B33A-9C8B-4A94-829F-C2CA0F8C7525}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Canvas_Window_Template</RootNamespace>
+    <AssemblyName>Canvas Window Template</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ISE.FreeType">
+      <HintPath>..\..\..\ClimbingMinigame\Tao Files\ISE.FreeType.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.FreeGlut, Version=2.4.0.1, Culture=neutral, PublicKeyToken=6e602a6ad6c0d06d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Tao.FreeGlut.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.OpenGl, Version=2.1.0.4, Culture=neutral, PublicKeyToken=1ca010269a4501ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Tao.OpenGl.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Platform.Windows, Version=1.0.0.4, Culture=neutral, PublicKeyToken=701104b2da67a104, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Tao.Platform.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basic Drawing Functions\Common.cs" />
+    <Compile Include="Basic Drawing Functions\Navigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Basic Drawing Functions\Navigator.Designer.cs">
+      <DependentUpon>Navigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic Drawing Functions\Rotation.cs" />
+    <Compile Include="Basic Setup\World.cs" />
+    <Compile Include="Drawables\TileMap.cs" />
+    <Compile Include="CurvedLines.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurvedLines.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawables\DirectionLine.cs" />
+    <Compile Include="Drawables\GameObjects.cs" />
+    <Compile Include="Drawables\GuardRectangle.cs" />
+    <Compile Include="Drawables\HighBlock.cs" />
+    <Compile Include="Drawables\HighWall.cs" />
+    <Compile Include="Drawables\LowBlock.cs" />
+    <Compile Include="Drawables\LowWall.cs" />
+    <Compile Include="Drawables\PointObj.cs" />
+    <Compile Include="Drawables\Tile.cs" />
+    <Compile Include="Interfaces\ICanvas.cs" />
+    <Compile Include="Interfaces\ICanvasWindow.cs" />
+    <Compile Include="Interfaces\IDrawable.cs" />
+    <Compile Include="Interfaces\IOcluding.cs" />
+    <Compile Include="Interfaces\IWorld.cs" />
+    <Compile Include="Basic Drawing Functions\pointObj.cs" />
+    <Compile Include="Basic Drawing Functions\simpleOpenGlView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Basic Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic Template.Designer.cs">
+      <DependentUpon>Basic Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IPoint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Basic Setup\ReadyOpenGlTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic Setup\ReadyOpenGlTemplate.Designer.cs">
+      <DependentUpon>ReadyOpenGlTemplate.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Basic Drawing Functions\Navigator.resx">
+      <DependentUpon>Navigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic Template.resx">
+      <DependentUpon>Basic Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurvedLines.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CurvedLines.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic Setup\ReadyOpenGlTemplate.resx">
+      <DependentUpon>ReadyOpenGlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Drawables\ID Format.txt" />
+    <Content Include="Interfaces\Restore instructions.txt" />
+    <None Include="Resources\UpCurve.bmp" />
+    <None Include="Resources\DownCurve.png" />
+    <None Include="Resources\DownCurve.bmp" />
+    <None Include="Resources\RotateUp.jpg" />
+    <Content Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="FreeSans.ttf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
