@@ -121,29 +121,29 @@ namespace Canvas_Window_Template.Drawables.Shapes
             this.myColor = color;
             this.myOutlineColor = outlineColor;
             createCubeTiles();
-            rotationAxis = new pointObj(origin.X + cubeSize / 2, origin.Y + cubeSize / 2, 0);
+            rotationAxis = new OpenGLPoint(origin.X + cubeSize / 2, origin.Y + cubeSize / 2, 0);
             Rotations = new Stack<Rotation>();
         }
         public void createCubeTiles()
         {
-            rotationAxis = new pointObj(origin.X + cubeSize / 2, origin.Y + cubeSize / 2, 0);
+            rotationAxis = new OpenGLPoint(origin.X + cubeSize / 2, origin.Y + cubeSize / 2, 0);
             tileFront = new OpenGLTile(origin,
-                new pointObj(origin.X + cubeSize, origin.Y, origin.Z + cubeSize),
+                new OpenGLPoint(origin.X + cubeSize, origin.Y, origin.Z + cubeSize),
                 Color, OutlineColor);
-            tileRight = new OpenGLTile(new pointObj(origin.X + cubeSize, origin.Y, origin.Z),
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
+            tileRight = new OpenGLTile(new OpenGLPoint(origin.X + cubeSize, origin.Y, origin.Z),
+                new OpenGLPoint(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
                 Color, OutlineColor);
             tileLeft = new OpenGLTile(origin,
-                new pointObj(origin.X, origin.Y + cubeSize, origin.Z + cubeSize),
+                new OpenGLPoint(origin.X, origin.Y + cubeSize, origin.Z + cubeSize),
                 Color, OutlineColor);
-            tileBack = new OpenGLTile(new pointObj(origin.X, origin.Y + cubeSize, origin.Z),
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
+            tileBack = new OpenGLTile(new OpenGLPoint(origin.X, origin.Y + cubeSize, origin.Z),
+                new OpenGLPoint(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
                 Color, OutlineColor);
             tileBottom = new OpenGLTile(origin,
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z),
+                new OpenGLPoint(origin.X + cubeSize, origin.Y + cubeSize, origin.Z),
                 Color, OutlineColor);
-            tileTop = new OpenGLTile(new pointObj(origin.X, origin.Y, origin.Z + cubeSize),
-                new pointObj(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
+            tileTop = new OpenGLTile(new OpenGLPoint(origin.X, origin.Y, origin.Z + cubeSize),
+                new OpenGLPoint(origin.X + cubeSize, origin.Y + cubeSize, origin.Z + cubeSize),
                 Color, OutlineColor);
         }
 
@@ -157,7 +157,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void draw()
         {
             if (Visible)
-                Common.drawCubeAndOutline(this);
+                OpenGLDrawer.drawCubeAndOutline(this);
         }
 
         public int getId()

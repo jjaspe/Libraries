@@ -47,8 +47,8 @@ namespace Canvas_Window_Template.Drawables
         public HighBlock(int[] or, int size, float[] color = null, float[] outlineColor = null)
         {
             //Default checking
-            color = color == null ? Common.colorRed : color;
-            outlineColor = outlineColor == null ? Common.colorBlack : outlineColor;
+            color = color == null ? OpenGLDrawer.colorRed : color;
+            outlineColor = outlineColor == null ? OpenGLDrawer.colorBlack : outlineColor;
             createBlock(new PointObj(or[0],or[1],or[2]),size,color,outlineColor);
             
             assignId();
@@ -77,7 +77,7 @@ namespace Canvas_Window_Template.Drawables
         {
             if(Visible)
                 foreach(OpenGLCube cube in myCubes)
-                    Common.drawCubeAndOutline(cube);
+                    OpenGLDrawer.drawCubeAndOutline(cube);
         }
         public int getId()
         {

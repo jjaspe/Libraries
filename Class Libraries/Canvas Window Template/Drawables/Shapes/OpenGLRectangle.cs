@@ -21,9 +21,9 @@ namespace Canvas_Window_Template.Drawables.Shapes
         }
 
         public IPoint bottomLeft, topLeft, bottomRight, topRight;
-        Common.planeOrientation Orientation;
+        OpenGLDrawer.planeOrientation Orientation;
 
-        public Common.planeOrientation Orientation1
+        public OpenGLDrawer.planeOrientation Orientation1
         {
             get { return Orientation; }
         }
@@ -69,13 +69,13 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void setOrientation()
         {
             if (BottomLeft.X == TopRight.X)
-                Orientation = Common.planeOrientation.X;
+                Orientation = OpenGLDrawer.planeOrientation.X;
             else if (BottomLeft.Y == TopRight.Y)
-                Orientation = Common.planeOrientation.Y;
+                Orientation = OpenGLDrawer.planeOrientation.Y;
             else if (BottomLeft.Z == TopRight.Z)
-                Orientation = Common.planeOrientation.Z;
+                Orientation = OpenGLDrawer.planeOrientation.Z;
             else
-                Orientation = Common.planeOrientation.None;
+                Orientation = OpenGLDrawer.planeOrientation.None;
         }
 
         public Rectangle(IPoint _bLeft, IPoint _tLeft, IPoint _bRight, IPoint _tRight
@@ -106,7 +106,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void draw()
         {
             if (Visible)
-                Common.drawRectangleAndOutline(this);
+                OpenGLDrawer.drawRectangleAndOutline(this);
         }
 
         public int getId()

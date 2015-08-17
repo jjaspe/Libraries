@@ -28,7 +28,7 @@ namespace Canvas_Window_Template.Drawables
         public void draw()
         {
             if(Visible)
-            Common.drawRectangleAndOutline(myRectangle);
+            OpenGLDrawer.drawRectangleAndOutline(myRectangle);
         }
 
         public int getId()

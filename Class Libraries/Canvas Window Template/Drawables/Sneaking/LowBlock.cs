@@ -19,8 +19,8 @@ namespace Canvas_Window_Template.Drawables
         public LowBlock(IPoint or, int size, float[] color=null, float[] outlineColor=null)
         {
             //Default checking
-            color=color==null?Common.colorRed:color;
-            outlineColor = outlineColor == null ? Common.colorBlack : outlineColor;
+            color=color==null?OpenGLDrawer.colorRed:color;
+            outlineColor = outlineColor == null ? OpenGLDrawer.colorBlack : outlineColor;
             this.MyOrigin = or;
             this.OutlineColor = outlineColor;
             this.CubeSize = size;
@@ -32,8 +32,8 @@ namespace Canvas_Window_Template.Drawables
         public LowBlock(int[] or, int size, float[] color = null, float[] outlineColor = null)
         {
             //Default checking
-            color = color == null ? Common.colorRed : color;
-            outlineColor = outlineColor == null ? Common.colorBlack : outlineColor;
+            color = color == null ? OpenGLDrawer.colorRed : color;
+            outlineColor = outlineColor == null ? OpenGLDrawer.colorBlack : outlineColor;
             this.MyOrigin = new PointObj(or[0],or[1],or[2]);
             this.OutlineColor = outlineColor;
             this.CubeSize = size;
@@ -51,7 +51,7 @@ namespace Canvas_Window_Template.Drawables
 
         public new void draw()
         {
-            Common.drawCubeAndOutline(this);
+            OpenGLDrawer.drawCubeAndOutline(this);
         }
 
         public new double[] getPosition()

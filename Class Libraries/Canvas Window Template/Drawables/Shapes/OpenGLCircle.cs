@@ -66,7 +66,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void draw()
         {
             if (Visible)
-                Common.drawCircle(this);
+                OpenGLDrawer.drawCircle(this);
         }
 
         public int getId()

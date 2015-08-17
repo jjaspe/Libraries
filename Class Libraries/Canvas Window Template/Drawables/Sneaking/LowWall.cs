@@ -26,11 +26,11 @@ namespace Canvas_Window_Template.Drawables
             for (int i = 0; i < (endX-startX)/tileSize; i++)
             {
                 myTiles[0,i] = new OpenGLTile(new PointObj(startX + i * tileSize, altitude, 0),
-                    new PointObj(startX + (i + 1) * tileSize, altitude, tileSize), Common.colorBrown, Common.colorBlack);
+                    new PointObj(startX + (i + 1) * tileSize, altitude, tileSize), OpenGLDrawer.colorBrown, OpenGLDrawer.colorBlack);
             }
             MyOrigin = myTiles[0, 0].MyOrigin;
             TileSize = tileSize;
-            Orientation = Common.planeOrientation.Y;
+            Orientation = OpenGLDrawer.planeOrientation.Y;
         }
 
         private void assignId()
@@ -47,15 +47,15 @@ namespace Canvas_Window_Template.Drawables
             for (int i = 0; i < (endY - startY) / TileSize; i++)
             {
                 myTiles[0, i] = new OpenGLTile(new PointObj(latitude, startY + i * TileSize, 0),
-                    new PointObj(latitude, startY + (i + 1) * TileSize, TileSize), Common.colorBrown, Common.colorBlack);
+                    new PointObj(latitude, startY + (i + 1) * TileSize, TileSize), OpenGLDrawer.colorBrown, OpenGLDrawer.colorBlack);
             }
-            Orientation = Common.planeOrientation.X;
+            Orientation = OpenGLDrawer.planeOrientation.X;
         }
 
         public new void draw()
         {
             foreach (OpenGLTile tile in myTiles)
-                Common.drawTileAndOutline(tile);
+                OpenGLDrawer.drawTileAndOutline(tile);
         }
 
         public new double[] getPosition()

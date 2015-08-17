@@ -16,9 +16,9 @@ namespace Canvas_Window_Template
     {
         simpleOpenGlView myView;
         ICanvasWindow myWindowOwner;
-        Common.planeOrientation orientation;
+        OpenGLDrawer.planeOrientation orientation;
 
-        public Common.planeOrientation Orientation
+        public OpenGLDrawer.planeOrientation Orientation
         {
             get { return orientation; }
             set { orientation = value; }
@@ -91,13 +91,13 @@ namespace Canvas_Window_Template
         {
             switch (orientation)
             {
-                case Common.planeOrientation.X://Y is left right,Z is up down
+                case OpenGLDrawer.planeOrientation.X://Y is left right,Z is up down
                     myView.moveZUp();
                     break;
-                case Common.planeOrientation.Z://Y is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Z://Y is up down, X is left right
                     myView.moveYUp();
                     break;
-                case Common.planeOrientation.Y://Z is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Y://Z is up down, X is left right
                     myView.moveZUp();
                     break;
                 default://Z is up down, X is left right
@@ -109,13 +109,13 @@ namespace Canvas_Window_Template
         {
             switch (orientation)
             {
-                case Common.planeOrientation.X://Y is left right,Z is up down
+                case OpenGLDrawer.planeOrientation.X://Y is left right,Z is up down
                     myView.moveZDown();
                     break;
-                case Common.planeOrientation.Z://Y is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Z://Y is up down, X is left right
                     myView.moveYDown();
                     break;
-                case Common.planeOrientation.Y://Z is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Y://Z is up down, X is left right
                     myView.moveZDown();
                     break;
                 default://Z is up down, X is left right
@@ -127,13 +127,13 @@ namespace Canvas_Window_Template
         {
             switch (orientation)
             {
-                case Common.planeOrientation.X://Y is left right,Z is up down
+                case OpenGLDrawer.planeOrientation.X://Y is left right,Z is up down
                     myView.moveYDown();
                     break;
-                case Common.planeOrientation.Z://Y is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Z://Y is up down, X is left right
                     myView.moveXDown();
                     break;
-                case Common.planeOrientation.Y://Z is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Y://Z is up down, X is left right
                     myView.moveXDown();
                     break;
                 default://Z is up down, X is left right
@@ -145,13 +145,13 @@ namespace Canvas_Window_Template
         {
             switch (orientation)
             {
-                case Common.planeOrientation.X://Y is left right,Z is up down
+                case OpenGLDrawer.planeOrientation.X://Y is left right,Z is up down
                     myView.moveYUp();
                     break;
-                case Common.planeOrientation.Z://Y is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Z://Y is up down, X is left right
                     myView.moveXUp();
                     break;
-                case Common.planeOrientation.Y://Z is up down, X is left right
+                case OpenGLDrawer.planeOrientation.Y://Z is up down, X is left right
                     myView.moveXUp();
                     break;
                 default://Z is up down, X is left right

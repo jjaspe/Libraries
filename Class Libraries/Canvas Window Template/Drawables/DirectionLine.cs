@@ -22,7 +22,7 @@ namespace Canvas_Window_Template.Drawables
         {
             begin = _begin;
             end = _end;
-            color = Common.colorWhite;
+            color = OpenGLDrawer.colorWhite;
         }
         public DirectionLine(IPoint _begin, IPoint _end,float[] _color)
         {
@@ -33,7 +33,7 @@ namespace Canvas_Window_Template.Drawables
         public void draw()
         {
             if(Visible)
-            Common.drawLine(begin,end,color);
+            OpenGLDrawer.drawLine(begin,end,color);
         }
 
         public int getId()

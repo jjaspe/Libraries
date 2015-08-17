@@ -109,22 +109,22 @@ namespace Canvas_Window_Template.Drawables.Shapes
             this.xWidth = xWidth;
             this.yWidth = yWidth;
             this.zWidth = zWidth;
-            rotationAxis = new pointObj(origin.X + xWidth / 2, origin.Y + yWidth / 2, 0);
+            rotationAxis = new OpenGLPoint(origin.X + xWidth / 2, origin.Y + yWidth / 2, 0);
             this.color = color;
-            this.outlineColor = outlineColor ?? Common.colorBlack;
+            this.outlineColor = outlineColor ?? OpenGLDrawer.colorBlack;
             createTiles();
         }
 
         private void createTiles()
         {
             IPoint b1 = origin,
-                b2 = new pointObj(b1.X + xWidth, b1.Y, b1.Z),
-                b3 = new pointObj(b1.X + xWidth, b1.Y + yWidth, b1.Z),
-                b4 = new pointObj(b1.X, b1.Y + yWidth, b1.Z),
-                t1 = new pointObj(b1.X, b1.Y, b1.Z + zWidth),
-                t2 = new pointObj(b1.X + xWidth, b1.Y, b1.Z + zWidth),
-                t3 = new pointObj(b1.X + xWidth, b1.Y + yWidth, b1.Z + zWidth),
-                t4 = new pointObj(b1.X, b1.Y + yWidth, b1.Z + zWidth);
+                b2 = new OpenGLPoint(b1.X + xWidth, b1.Y, b1.Z),
+                b3 = new OpenGLPoint(b1.X + xWidth, b1.Y + yWidth, b1.Z),
+                b4 = new OpenGLPoint(b1.X, b1.Y + yWidth, b1.Z),
+                t1 = new OpenGLPoint(b1.X, b1.Y, b1.Z + zWidth),
+                t2 = new OpenGLPoint(b1.X + xWidth, b1.Y, b1.Z + zWidth),
+                t3 = new OpenGLPoint(b1.X + xWidth, b1.Y + yWidth, b1.Z + zWidth),
+                t4 = new OpenGLPoint(b1.X, b1.Y + yWidth, b1.Z + zWidth);
 
             tileBottom = new Rectangle(b1, b4, b2, b3,
                 Color, OutlineColor);
@@ -144,7 +144,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void draw()
         {
             if (Visible)
-                Common.drawParallepiped(this);
+                OpenGLDrawer.drawParallepiped(this);
         }
 
         public int getId()

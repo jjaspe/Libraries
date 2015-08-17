@@ -47,7 +47,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         /// <param name="color"></param>
         public OpenGLLine(IPoint p1, IPoint p2, float[] color = null)//defaulted to red
         {
-            MyColor = color ?? Common.colorRed;
+            MyColor = color ?? OpenGLDrawer.colorRed;
             P1 = p1;
             P2 = p2;
 
@@ -62,7 +62,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void draw()
         {
             if (Visible)
-                Common.drawLine(P1, P2, MyColor);
+                OpenGLDrawer.drawLine(P1, P2, MyColor);
         }
 
         public int getId()

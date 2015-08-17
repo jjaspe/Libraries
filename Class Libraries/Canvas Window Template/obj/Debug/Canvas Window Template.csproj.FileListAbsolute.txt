@@ -190,9 +190,10 @@ C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Templa
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\bin\Debug\Tao.Platform.Windows.dll
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Navigator.resources
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Open_GL_Template.BasicOpenGlTemplate.resources
-C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.CurvedLines.resources
+C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Resources.CurvedLines.resources
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Properties.Resources.resources
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas_Window_Template.Basic_Drawing_Functions.ReadyOpenGlTemplate.resources
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.csproj.GenerateResource.Cache
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.dll
 C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.pdb
+C:\Users\Wichito\Documents\GitHub\Libraries\Class Libraries\Canvas Window Template\obj\Debug\Canvas Window Template.csprojResolveAssemblyReference.cache

@@ -11,7 +11,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
     {
         protected OpenGLTile[,] myTiles;
         int myHeight, myWidth, tileSize;
-        Common.planeOrientation orientation;
+        OpenGLDrawer.planeOrientation orientation;
         public float[] defaultColor, defaultOutlineColor;
         bool visible = true;
 
@@ -32,7 +32,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
             get { return myTiles; }
             set { myTiles = value; }
         }
-        public Common.planeOrientation Orientation
+        public OpenGLDrawer.planeOrientation Orientation
         {
             get { return orientation; }
             set { orientation = value; }
@@ -69,7 +69,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
             myWidth = wallWidth;
             MyOrigin = origin;
             tileSize = _tileSize;
-            orientation = (Common.planeOrientation)_orientation;
+            orientation = (OpenGLDrawer.planeOrientation)_orientation;
             myTiles = new OpenGLTile[wallHeight, wallWidth];
             defaultColor = color;
             defaultOutlineColor = outlineColor;
@@ -80,7 +80,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         * tileSize their size, orientation orientation of perpendicular line,
         * and color and outlineColor the tiles' colors*/
         public OpenGLWall(IPoint origin, int wallHeight, int wallWidth,
-            int _tileSize, Common.planeOrientation _orientation, float[] color, float[] outlineColor)
+            int _tileSize, OpenGLDrawer.planeOrientation _orientation, float[] color, float[] outlineColor)
         {
             myHeight = wallHeight;
             myWidth = wallWidth;
@@ -114,9 +114,9 @@ namespace Canvas_Window_Template.Drawables.Shapes
             #region CREATE_TILES_FOR_WALL
             switch (orientation)
             {
-                case Common.planeOrientation.X: //Perpendicular to X axis
+                case OpenGLDrawer.planeOrientation.X: //Perpendicular to X axis
                     {
-                        currentTileEnd = new pointObj(currentTileOrigin.X,
+                        currentTileEnd = new OpenGLPoint(currentTileOrigin.X,
                             currentTileOrigin.Y + tileSize, currentTileOrigin.Z + tileSize);
                         for (int i = 0; i < myHeight; i++)
                         {
@@ -135,9 +135,9 @@ namespace Canvas_Window_Template.Drawables.Shapes
                         }
                         break;
                     }
-                case Common.planeOrientation.Y: //Perpendicular to Y axis
+                case OpenGLDrawer.planeOrientation.Y: //Perpendicular to Y axis
                     {
-                        currentTileEnd = new pointObj(currentTileOrigin.X + tileSize,
+                        currentTileEnd = new OpenGLPoint(currentTileOrigin.X + tileSize,
                             currentTileOrigin.Y, currentTileOrigin.Z + tileSize);
                         for (int i = 0; i < myHeight; i++)
                         {
@@ -155,9 +155,9 @@ namespace Canvas_Window_Template.Drawables.Shapes
                         }
                         break;
                     }
-                case Common.planeOrientation.Z: //Perpendicular to Z axis
+                case OpenGLDrawer.planeOrientation.Z: //Perpendicular to Z axis
                     {
-                        currentTileEnd = new pointObj(currentTileOrigin.X + tileSize,
+                        currentTileEnd = new OpenGLPoint(currentTileOrigin.X + tileSize,
                             currentTileOrigin.Y + tileSize, currentTileOrigin.Z);
                         for (int i = 0; i < myWidth; i++)
                         {
@@ -202,7 +202,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void draw()
         {
             if (Visible)
-                Common.staticDrawWall(this);
+                OpenGLDrawer.staticDrawWall(this);
         }
 
         public int getId()

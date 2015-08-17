@@ -103,7 +103,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void draw()
         {
             if (Visible)
-                Common.drawRombusAndOutline(this);
+                OpenGLDrawer.drawRombusAndOutline(this);
         }
 
         public int getId()
@@ -118,7 +118,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
 
         public void setPosition(IPoint newPosition)
         {
-            throw new NotImplementedException();
+            MyOrigin = newPosition;
         }
     }
 }

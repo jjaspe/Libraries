@@ -66,7 +66,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             this.navigator1.MyView = null;
             this.navigator1.MyWindowOwner = null;
             this.navigator1.Name = "navigator1";
-            this.navigator1.Orientation = Canvas_Window_Template.Basic_Drawing_Functions.Common.planeOrientation.None;
+            this.navigator1.Orientation = Canvas_Window_Template.Basic_Drawing_Functions.OpenGLDrawer.planeOrientation.None;
             this.navigator1.Size = new System.Drawing.Size(190, 95);
             this.navigator1.TabIndex = 16;
             // 

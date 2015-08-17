@@ -2,6 +2,7 @@
 using Canvas_Window_Template.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -10,7 +11,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
     public class OpenGLTile : OpenGLShape
     {
         public IPoint end;
-        Common.planeOrientation Orientation;
+        OpenGLDrawer.planeOrientation Orientation;
         private float[] myColor;
         private float[] myOutlineColor;
         public int angle = 0;
@@ -48,6 +49,16 @@ namespace Canvas_Window_Template.Drawables.Shapes
             setOrientation();
             setTileSize();
         }
+
+        public OpenGLTile(IPoint origin, IPoint end, Color color, Color outlineColor)
+        {
+            MyOrigin = origin;
+            MyEnd = end;
+            myColor = new float[]{color.R,color.G,color.B};
+            myOutlineColor = new float[]{outlineColor.R,outlineColor.G,outlineColor.B};
+            setOrientation();
+            setTileSize();
+        }
         public OpenGLTile()
         {
             myColor = new float[] { 0.0f, 0.0f, 0.0f };
@@ -72,25 +83,25 @@ namespace Canvas_Window_Template.Drawables.Shapes
         public void setOrientation()
         {
             if (MyOrigin.X == MyEnd.X)
-                Orientation = Common.planeOrientation.X;
+                Orientation = OpenGLDrawer.planeOrientation.X;
             else if (MyOrigin.Y == MyEnd.Y)
-                Orientation = Common.planeOrientation.Y;
+                Orientation = OpenGLDrawer.planeOrientation.Y;
             else if (MyOrigin.Z == MyEnd.Z)
-                Orientation = Common.planeOrientation.Z;
+                Orientation = OpenGLDrawer.planeOrientation.Z;
             else
-                Orientation = Common.planeOrientation.None;
+                Orientation = OpenGLDrawer.planeOrientation.None;
         }
         public void setTileSize()
         {
             switch (Orientation)
             {
-                case Common.planeOrientation.X:
+                case OpenGLDrawer.planeOrientation.X:
                     TileSize = MyEnd.Z - MyOrigin.Z;
                     break;
-                case Common.planeOrientation.Y:
+                case OpenGLDrawer.planeOrientation.Y:
                     TileSize = MyEnd.Z - MyOrigin.Z;
                     break;
-                case Common.planeOrientation.Z:
+                case OpenGLDrawer.planeOrientation.Z:
                     TileSize = MyEnd.X - MyOrigin.X;
                     break;
                 default:
@@ -124,7 +135,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
             setOrientation();
             switch (Orientation)
             {
-                case Common.planeOrientation.X://Vertical, so get Y positions
+                case OpenGLDrawer.planeOrientation.X://Vertical, so get Y positions
                     if (!noSlope)//Vertical lines wont intercept vertical tiles
                     {
                         spot = origin.X;
@@ -137,7 +148,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
                     }
                     else
                         return false;
-                case Common.planeOrientation.Y://Horizontal, so get X positions
+                case OpenGLDrawer.planeOrientation.Y://Horizontal, so get X positions
                     spot = origin.Y;
                     if (lineMaxY < spot || lineMinY > spot)//endpoints too high or too low
                         return false;
@@ -160,7 +171,7 @@ namespace Canvas_Window_Template.Drawables.Shapes
 
         public override void draw()
         {
-            Common.drawTileAndOutline(this);
+            OpenGLDrawer.drawTileAndOutline(this);
         }
 
     }

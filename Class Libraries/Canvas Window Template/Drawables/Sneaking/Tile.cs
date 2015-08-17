@@ -76,7 +76,7 @@ namespace Canvas_Window_Template.Drawables
         public new void draw()
         {
             if(Visible)
-            Common.drawTileAndOutline(this);
+            OpenGLDrawer.drawTileAndOutline(this);
             //Common.drawTile(this);
         }
 
@@ -108,17 +108,17 @@ namespace Canvas_Window_Template.Drawables
                     return getCenter();
             }
         }*/
-        public double[] getCenter(Common.tileSide side)
+        public double[] getCenter(OpenGLDrawer.tileSide side)
         {
             switch (side)
             {
-                case Common.tileSide.Top:
+                case OpenGLDrawer.tileSide.Top:
                     return new double[] { MyOrigin.X + TileSize / 2, MyOrigin.Y + TileSize };
-                case Common.tileSide.Right:
+                case OpenGLDrawer.tileSide.Right:
                     return new double[] { MyOrigin.X + TileSize, MyOrigin.Y + TileSize / 2 };
-                case Common.tileSide.Bottom:
+                case OpenGLDrawer.tileSide.Bottom:
                     return new double[] { MyOrigin.X + TileSize / 2, MyOrigin.Y };
-                case Common.tileSide.Left:
+                case OpenGLDrawer.tileSide.Left:
                     return new double[] { MyOrigin.X, MyOrigin.Y + TileSize / 2 };
                 default:
                     return getCenter();
@@ -146,7 +146,7 @@ namespace Canvas_Window_Template.Drawables
         }
 
 
-        public static Tile[,] createTileArray(IPoint leftBottomCorner, int width, int height, Common.planeOrientation orientation,
+        public static Tile[,] createTileArray(IPoint leftBottomCorner, int width, int height, OpenGLDrawer.planeOrientation orientation,
             float[] color, double tileSize)
         {
             Tile[,] newTiles = new Tile[width, height];
@@ -154,9 +154,9 @@ namespace Canvas_Window_Template.Drawables
             #region CREATE_TILES_FOR_WALL
             switch (orientation)
             {
-                case Common.planeOrientation.X: //Perpendicular to X axis
+                case OpenGLDrawer.planeOrientation.X: //Perpendicular to X axis
                     {
-                        currentTileEnd = new pointObj(currentTileOrigin.X,
+                        currentTileEnd = new OpenGLPoint(currentTileOrigin.X,
                             currentTileOrigin.Y + tileSize, currentTileOrigin.Z + tileSize);
                         for (int i = 0; i < height; i++)
                         {
@@ -165,7 +165,7 @@ namespace Canvas_Window_Template.Drawables
                             {
                                 currentTileOrigin.Z = currentTileOrigin.Z + tileSize;
                                 currentTileEnd.Z = currentTileEnd.Z + tileSize;
-                                newTiles[i, j] = new Tile(currentTileOrigin, currentTileEnd) { MyColor = color, MyOutlineColor = Common.colorBlack, TileSize = tileSize };
+                                newTiles[i, j] = new Tile(currentTileOrigin, currentTileEnd) { MyColor = color, MyOutlineColor = OpenGLDrawer.colorBlack, TileSize = tileSize };
                             }
                             currentTileOrigin.Y = currentTileOrigin.Y + tileSize;
                             currentTileEnd.Y = currentTileEnd.Y + tileSize;
@@ -175,9 +175,9 @@ namespace Canvas_Window_Template.Drawables
                         }
                         break;
                     }
-                case Common.planeOrientation.Y: //Perpendicular to Y axis
+                case OpenGLDrawer.planeOrientation.Y: //Perpendicular to Y axis
                     {
-                        currentTileEnd = new pointObj(currentTileOrigin.X + tileSize,
+                        currentTileEnd = new OpenGLPoint(currentTileOrigin.X + tileSize,
                             currentTileOrigin.Y, currentTileOrigin.Z + tileSize);
                         for (int i = 0; i < height; i++)
                         {
@@ -185,7 +185,7 @@ namespace Canvas_Window_Template.Drawables
                             {
                                 currentTileOrigin.X = currentTileOrigin.X + tileSize;
                                 currentTileEnd.X = currentTileEnd.X + tileSize;
-                                newTiles[i, j] = new Tile(currentTileOrigin, currentTileEnd) { MyColor = color, MyOutlineColor = Common.colorBlack, TileSize = tileSize };
+                                newTiles[i, j] = new Tile(currentTileOrigin, currentTileEnd) { MyColor = color, MyOutlineColor = OpenGLDrawer.colorBlack, TileSize = tileSize };
                             }
                             currentTileOrigin.Z = currentTileOrigin.Z + tileSize;
                             currentTileEnd.Z = currentTileEnd.Z + tileSize;
@@ -195,15 +195,15 @@ namespace Canvas_Window_Template.Drawables
                         }
                         break;
                     }
-                case Common.planeOrientation.Z: //Perpendicular to Z axis
+                case OpenGLDrawer.planeOrientation.Z: //Perpendicular to Z axis
                     {
-                        currentTileEnd = new pointObj(currentTileOrigin.X + tileSize,
+                        currentTileEnd = new OpenGLPoint(currentTileOrigin.X + tileSize,
                             currentTileOrigin.Y + tileSize, currentTileOrigin.Z);
                         for (int i = 0; i < width; i++)
                         {
                             for (int j = 0; j < height; j++)
                             {
-                                newTiles[i, j] = new Tile(currentTileOrigin, currentTileEnd) { MyColor = color, MyOutlineColor = Common.colorBlack, TileSize = tileSize };
+                                newTiles[i, j] = new Tile(currentTileOrigin, currentTileEnd) { MyColor = color, MyOutlineColor = OpenGLDrawer.colorBlack, TileSize = tileSize };
                                 currentTileOrigin.X = currentTileOrigin.X + tileSize;
                                 currentTileEnd.X = currentTileEnd.X + tileSize;
                             }

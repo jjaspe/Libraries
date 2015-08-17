@@ -58,51 +58,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Basic Drawing Functions\Common.cs" />
-    <Compile Include="Basic Drawing Functions\Navigator.cs">
+    <Compile Include="Basic Drawing Functions\OpenGLDrawer.cs" />
+    <Compile Include="Basic Setup\Navigator.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Basic Drawing Functions\Navigator.Designer.cs">
+    <Compile Include="Basic Setup\Navigator.Designer.cs">
       <DependentUpon>Navigator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Basic Drawing Functions\OpenGLSelector.cs" />
     <Compile Include="Basic Drawing Functions\Rotation.cs" />
-    <Compile Include="Basic Setup\World.cs" />
+    <Compile Include="Drawables\World.cs" />
     <Compile Include="Drawables\Shapes\OpenGLCircle.cs" />
     <Compile Include="Drawables\Shapes\OpenGLCube.cs" />
     <Compile Include="Drawables\Shapes\OpenGLLine.cs" />
     <Compile Include="Drawables\Shapes\OpenGLParallepiped.cs" />
     <Compile Include="Drawables\Shapes\OpenGLRectangle.cs" />
     <Compile Include="Drawables\Shapes\OpenGLRombus.cs" />
+    <Compile Include="Drawables\Shapes\OpenGLShape.cs" />
     <Compile Include="Drawables\Shapes\OpenGLTile.cs" />
     <Compile Include="Drawables\Shapes\OpenGLWall.cs" />
-    <Compile Include="Drawables\TileMap.cs" />
-    <Compile Include="CurvedLines.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CurvedLines.resx</DependentUpon>
-    </Compile>
+    <Compile Include="Drawables\Maps\TileMap.cs" />
     <Compile Include="Drawables\DirectionLine.cs" />
     <Compile Include="Drawables\GameObjects.cs" />
     <Compile Include="Drawables\Sneaking\GuardRectangle.cs" />
-    <Compile Include="Drawables\HighBlock.cs" />
-    <Compile Include="Drawables\HighWall.cs" />
-    <Compile Include="Drawables\LowBlock.cs" />
-    <Compile Include="Drawables\LowWall.cs" />
+    <Compile Include="Drawables\Sneaking\HighBlock.cs" />
+    <Compile Include="Drawables\Sneaking\HighWall.cs" />
+    <Compile Include="Drawables\Sneaking\LowBlock.cs" />
+    <Compile Include="Drawables\Sneaking\LowWall.cs" />
     <Compile Include="Drawables\PointObj.cs" />
-    <Compile Include="Drawables\Tile.cs" />
+    <Compile Include="Drawables\Sneaking\Tile.cs" />
     <Compile Include="Interfaces\ICanvas.cs" />
     <Compile Include="Interfaces\ICanvasWindow.cs" />
     <Compile Include="Interfaces\IDrawable.cs" />
     <Compile Include="Interfaces\IOcluding.cs" />
     <Compile Include="Interfaces\IWorld.cs" />
-    <Compile Include="Basic Drawing Functions\pointObj.cs" />
-    <Compile Include="Basic Drawing Functions\simpleOpenGlView.cs">
+    <Compile Include="Basic Drawing Functions\OpenGLPoint.cs" />
+    <Compile Include="Basic Setup\simpleOpenGlView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Basic Template.cs">
+    <Compile Include="Basic Setup\Basic Template.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Basic Template.Designer.cs">
+    <Compile Include="Basic Setup\Basic Template.Designer.cs">
       <DependentUpon>Basic Template.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IPoint.cs" />
@@ -118,17 +115,23 @@
     <Compile Include="Basic Setup\ReadyOpenGlTemplate.Designer.cs">
       <DependentUpon>ReadyOpenGlTemplate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resources\CurvedLines.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurvedLines.resx</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Basic Drawing Functions\Navigator.resx">
+    <EmbeddedResource Include="Basic Setup\Navigator.resx">
       <DependentUpon>Navigator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Basic Template.resx">
+    <EmbeddedResource Include="Basic Setup\Basic Template.resx">
       <DependentUpon>Basic Template.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CurvedLines.resx">
+    <EmbeddedResource Include="Resources\CurvedLines.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>CurvedLines.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -149,8 +152,7 @@
     <Content Include="TODO.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-    <None Include="FreeSans.ttf" />
+    <None Include="Resources\FreeSans.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

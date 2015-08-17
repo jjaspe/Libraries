@@ -11,6 +11,8 @@ namespace Canvas_Window_Template.Interfaces
         IDrawable getNext();
         void add(IDrawable d);
         IDrawable remove(IDrawable d);
+
+        void RemoveAll();
     }
     
 }

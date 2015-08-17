@@ -32,5 +32,10 @@ namespace Canvas_Window_Template.Basic_Setup
                 index = 0;
             return removed?d:null;
         }
+
+        public void RemoveAll()
+        {
+            myDrawables=new List<IDrawable>();
+        }
     }
 }

@@ -28,14 +28,14 @@ namespace Canvas_Window_Template.Drawables
             for (int i = 0; i < (endX-startX)/tileSize; i++)
             {
                 myTiles[0,i] = new OpenGLTile(new PointObj(or.X+ i * tileSize, or.Y, or.Z),
-                    new PointObj(or.X + (i + 1) * tileSize, or.Y, or.Z+tileSize), Common.colorBrown, Common.colorBlack);
+                    new PointObj(or.X + (i + 1) * tileSize, or.Y, or.Z+tileSize), OpenGLDrawer.colorBrown, OpenGLDrawer.colorBlack);
                 myTiles[1, i] = new OpenGLTile(new PointObj(topOr.X + i * tileSize, topOr.Y, topOr.Z),
-                   new PointObj(topOr.X + (i + 1) * tileSize, topOr.Y, topOr.Z + tileSize), Common.colorBrown, Common.colorBlack);
+                   new PointObj(topOr.X + (i + 1) * tileSize, topOr.Y, topOr.Z + tileSize), OpenGLDrawer.colorBrown, OpenGLDrawer.colorBlack);
 
             }
             MyOrigin = myTiles[0, 0].MyOrigin;
             TileSize = tileSize;
-            Orientation = Common.planeOrientation.Y;
+            Orientation = OpenGLDrawer.planeOrientation.Y;
         }
 
         private void assignId()
@@ -48,7 +48,7 @@ namespace Canvas_Window_Template.Drawables
         public new void draw()
         {
             foreach (OpenGLTile tile in myTiles)
-                Common.drawTileAndOutline(tile);
+                OpenGLDrawer.drawTileAndOutline(tile);
         }
 
         public new double[] getPosition()
@@ -83,12 +83,12 @@ namespace Canvas_Window_Template.Drawables
             for (int i = 0; i < (endY - startY) / TileSize; i++)
             {
                 myTiles[0, i] = new OpenGLTile(new PointObj(or.X, or.Y + i * TileSize, or.Z),
-                    new PointObj(or.X , or.Y + (i + 1) * TileSize, or.Z + TileSize), Common.colorBrown, Common.colorBlack);
+                    new PointObj(or.X , or.Y + (i + 1) * TileSize, or.Z + TileSize), OpenGLDrawer.colorBrown, OpenGLDrawer.colorBlack);
                 myTiles[1, i] = new OpenGLTile(new PointObj(topOr.X , topOr.Y + i * TileSize , topOr.Z),
-                   new PointObj(topOr.X, topOr.Y + (i + 1) * TileSize, topOr.Z + TileSize), Common.colorBrown, Common.colorBlack);
+                   new PointObj(topOr.X, topOr.Y + (i + 1) * TileSize, topOr.Z + TileSize), OpenGLDrawer.colorBrown, OpenGLDrawer.colorBlack);
 
             }
-            Orientation = Common.planeOrientation.X;
+            Orientation = OpenGLDrawer.planeOrientation.X;
         }
 
         public IPoint getLocation()

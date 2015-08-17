@@ -39,7 +39,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
             this.MyView.MouseClick += new MouseEventHandler(viewClick);
             this.MyView.Dock = DockStyle.None;
 
-            MyNavigator.Orientation = Common.planeOrientation.Z;
+            MyNavigator.Orientation = OpenGLDrawer.planeOrientation.Z;
             MyNavigator.MyWindowOwner = this;
             MyNavigator.MyView = this.MyView;
             MyNavigator.Parent = MyView;
@@ -50,7 +50,7 @@ namespace Canvas_Window_Template.Basic_Drawing_Functions
 
         public void drawingLoop()
         {
-            Common myDrawer = new Common();
+            OpenGLDrawer myDrawer = new OpenGLDrawer();
             MyView.setCameraView(simpleOpenGlView.VIEWS.Iso);
             
             while (!MyView.isDisposed())
